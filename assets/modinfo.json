@@ -1,0 +1,11 @@
+{
+	"id": "pebblesreadspearls",
+	"name": "Pebbles Reads Pearls",
+	"version": "1.0.0",
+	"authors": "forthbridge",
+	"description": "Allows Rivulet & Saint Pebbles to read pearls, with unique dialogue!<LINE><LINE><LINE><LINE><LINE>Source: https://github.com/forthbridge/pebbles-reads-pearls",
+	"requirements": [],
+	"requirements_names": [],
+	"tags": ["Gameplay Mechanics"],
+	"checksum_override_version": false
+}
