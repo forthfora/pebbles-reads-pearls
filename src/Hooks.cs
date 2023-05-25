@@ -16,8 +16,29 @@ public static partial class Hooks
 {
     public static void ApplyHooks()
     {
+        On.RainWorld.OnModsInit += RainWorld_OnModsInit;
+
         On.MoreSlugcats.SSOracleRotBehavior.Update += SSOracleRotBehavior_Update;
         On.MoreSlugcats.SSOracleRotBehavior.RMConversation.AddEvents += RMConversation_AddEvents;
+    }
+
+
+    public static SlugcatStats.Name PRPRivulet = null!;
+
+    private static void RainWorld_OnModsInit(On.RainWorld.orig_OnModsInit orig, RainWorld self)
+    {
+        try
+        {
+            PRPRivulet = new SlugcatStats.Name(nameof(PRPRivulet), true);
+        }
+        catch (Exception e)
+        {
+            Plugin.Logger.LogError(e);
+        }
+        finally
+        {
+            orig(self);
+        }
     }
 
 
@@ -39,7 +60,7 @@ public static partial class Hooks
         {
             if (oracleModule.floatPearl != null)
                 oracleModule.floatPearl.gravity = 1.0f;
-            
+
             oracleModule.floatPearl = null;
             oracleModule.hoverPos = null;
         }
@@ -161,17 +182,13 @@ public static partial class Hooks
                     if (physicalObject is not DataPearl dataPearl) continue;
 
                     // Exclude halcyon, it already has dialogue
-                    if (dataPearl.AbstractPearl.dataPearlType == MoreSlugcats.MoreSlugcatsEnums.DataPearlType.RM) continue;
+                    if (dataPearl.AbstractPearl.dataPearlType == MoreSlugcatsEnums.DataPearlType.RM) continue;
 
                     oracleModule.inspectPearl = dataPearl;
                 }
             }
         }
     }
-
-
-    // this will surely scare someone
-    private static bool wasAlreadyRead = false;
 
     private static void StartItemConversation(MoreSlugcats.SSOracleRotBehavior self, DataPearl pearl)
     {
@@ -181,8 +198,19 @@ public static partial class Hooks
             OracleRMData.Add(self, oracleModule);
         }
 
-        wasAlreadyRead = oracleModule.readPearls.Contains(pearl.abstractPhysicalObject);
-        
+
+        oracleModule.wasAlreadyRead = oracleModule.readPearls.Keys.Contains(pearl.abstractPhysicalObject);
+
+        if (oracleModule.wasAlreadyRead)
+        {
+            oracleModule.rand = oracleModule.readPearls[pearl.AbstractPearl];
+        }
+        else
+        {
+            oracleModule.rand = Random.Range(0, 100000);
+            oracleModule.readPearls[pearl.AbstractPearl] = oracleModule.rand;
+        }
+
 
         if (pearl.AbstractPearl.dataPearlType == DataPearl.AbstractDataPearl.DataPearlType.Misc || pearl.AbstractPearl.dataPearlType.Index == -1)
             self.conversation = new MoreSlugcats.SSOracleRotBehavior.RMConversation(self, Conversation.ID.Moon_Pearl_Misc, self.dialogBox);
@@ -199,8 +227,8 @@ public static partial class Hooks
         else
             self.conversation = new MoreSlugcats.SSOracleRotBehavior.RMConversation(self, Conversation.DataPearlToConversation(pearl.AbstractPearl.dataPearlType), self.dialogBox);
 
-    
-        if (wasAlreadyRead)
+
+        if (oracleModule.wasAlreadyRead)
         {
             switch (Random.Range(0, 4))
             {
@@ -209,8 +237,8 @@ public static partial class Hooks
                     break;
 
                 case 1:
-                    self.conversation.events.Insert(0, new TextEvent(self.conversation, 0, self.Translate("They say the definition of insanity is repeating oneself, and expecting a different result..."), 10));
                     self.conversation.events.Insert(0, new TextEvent(self.conversation, 0, self.Translate("...are you testing that?"), 10));
+                    self.conversation.events.Insert(0, new TextEvent(self.conversation, 0, self.Translate("They say the definition of insanity is repeating oneself, and expecting a different result..."), 10));
                     break;
 
                 case 2:
@@ -222,10 +250,6 @@ public static partial class Hooks
                     break;
             }
         }
-        else
-        {
-            oracleModule.readPearls.Add(pearl.AbstractPearl);
-        }
     }
 
 
@@ -233,94 +257,103 @@ public static partial class Hooks
     {
         orig(self);
 
-
-        if (self.id == Conversation.ID.Moon_Pearl_Misc || self.id == Conversation.ID.Moon_Pearl_Misc2)
+        if (!OracleRMData.TryGetValue(self.owner, out var oracleModule))
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(38, true, Random.Range(0, 100000));
+            oracleModule = new OracleRMModule();
+            OracleRMData.Add(self.owner, oracleModule);
         }
+
+        // Allow for consistency in random dialogue (within the same cycle)
+        int rand = oracleModule.rand;
+
 
         #region Non DP
 
+        if (self.id == Conversation.ID.Moon_Pearl_Misc || self.id == Conversation.ID.Moon_Pearl_Misc2)
+        {
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(38, true, rand);
+        }
+
         else if (self.id == Conversation.ID.Moon_Pebbles_Pearl)
         {
-            self.PebblesPearlIntro();
-            self.LoadEventsFromFile(40, true, Random.Range(0, 100000));
+            self.PebblesPearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(40, PRPRivulet, true, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_CC)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(7);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(7, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_LF_west)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(10);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(10, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_LF_bottom)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(11);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(11, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_HI)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(12);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(12, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_SH)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(13);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(13, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_DS)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(14);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(14, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_SB_filtration)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(15);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(15, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_GW)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(16);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(16, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_SL_bridge)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(17);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(17, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_SL_moon)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(18);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(18, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_SU)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(41);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(41, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_UW)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(42);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(42, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_SB_ravine)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(43);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(43, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_SL_chimney)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(54);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(54, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_Red_stomach)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(51);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(51, PRPRivulet, false, rand);
         }
 
         #endregion
@@ -329,63 +362,63 @@ public static partial class Hooks
 
         else if (self.id == Conversation.ID.Moon_Pearl_SI_west)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(20);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(20, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_SI_top)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(21);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(21, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_SI_chat3)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(22);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(22, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_SI_chat4)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(23);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(23, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_SI_chat5)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(24);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(24, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_SU_filt)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(101);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(101, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_DM)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(102);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(102, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_LC)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(103);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(103, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_OE)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(104);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(104, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_MS)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(105);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(105, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_Rivulet_stomach)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(119);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(119, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_LC_second)
         {
-            self.PearlIntro();
-            self.LoadEventsFromFile(121);
+            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.LoadEventsFromFile(121, PRPRivulet, false, rand);
         }
 
         #endregion
@@ -393,7 +426,7 @@ public static partial class Hooks
 
 
 
-    private static void PearlIntro(this MoreSlugcats.SSOracleRotBehavior.RMConversation self)
+    private static void PearlIntro(this MoreSlugcats.SSOracleRotBehavior.RMConversation self, bool wasAlreadyRead)
     {
         if (wasAlreadyRead) return;
 
@@ -417,7 +450,7 @@ public static partial class Hooks
         }
     }
 
-    private static void PebblesPearlIntro(this MoreSlugcats.SSOracleRotBehavior.RMConversation self)
+    private static void PebblesPearlIntro(this MoreSlugcats.SSOracleRotBehavior.RMConversation self, bool wasAlreadyRead)
     {
         if (wasAlreadyRead) return;
 
