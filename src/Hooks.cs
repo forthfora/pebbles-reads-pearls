@@ -24,12 +24,14 @@ public static partial class Hooks
 
 
     public static SlugcatStats.Name PRPRivulet = null!;
+    public static SlugcatStats.Name PRPRivuletEnding = null!;
 
     private static void RainWorld_OnModsInit(On.RainWorld.orig_OnModsInit orig, RainWorld self)
     {
         try
         {
-            PRPRivulet = new SlugcatStats.Name(nameof(PRPRivulet), true);
+            PRPRivulet = new(nameof(PRPRivulet), true);
+            PRPRivuletEnding = new(nameof(PRPRivuletEnding), true);
         }
         catch (Exception e)
         {
@@ -272,7 +274,7 @@ public static partial class Hooks
         if (self.id == Conversation.ID.Moon_Pearl_Misc || self.id == Conversation.ID.Moon_Pearl_Misc2)
         {
             self.PearlIntro(oracleModule.wasAlreadyRead);
-            self.LoadEventsFromFile(38, true, rand);
+            self.LoadEventsFromFile(38, PRPRivulet, true, rand);
         }
 
         else if (self.id == Conversation.ID.Moon_Pebbles_Pearl)
@@ -378,10 +380,18 @@ public static partial class Hooks
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_SI_chat4)
         {
             self.PearlIntro(oracleModule.wasAlreadyRead);
-            self.LoadEventsFromFile(23, PRPRivulet, false, rand);
+            self.LoadEventsFromFile(23, self.owner.oracle.room.game.GetStorySession.saveState.deathPersistentSaveData.altEnding ? PRPRivuletEnding : PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_SI_chat5)
         {
+            if (oracleModule.wasAlreadyRead)
+            {
+                oracleModule.wasAlreadyRead = false;
+                self.events.Add(new TextEvent(self, 0, self.owner.Translate("I know I do not deserve this courtesy, but do I deserve to be taunted too?"), 10));
+                self.events.Add(new TextEvent(self, 0, self.owner.Translate("Just take that pearl far away from here. Please"), 10));
+                return;
+            }
+
             self.PearlIntro(oracleModule.wasAlreadyRead);
             self.LoadEventsFromFile(24, PRPRivulet, false, rand);
         }
