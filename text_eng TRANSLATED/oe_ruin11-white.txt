@@ -1,0 +1,12 @@
+0-oe_ruin11-white
+Will: Yeeks were created as a sort of parallel to lantern mice, and as a marker of distance from Five Pebbles.
+
+Will: They are extremely rare in the base game's regions, or only appear on specific slugcats later in the timeline!
+
+Will: The core reason for this is to make them feel exotic. Like this creature is migrating from<LINE>a far away land, and someday will merge with the ecosystem beneath Five Pebbles and Moon.
+
+Will: Their unique hopping behavior when held was added late in development,<LINE>in response to a tester's disappointment in the inability to hold them.
+
+Will: Turtle was quite surprised when they could grab one in the next update they got, and even more so about their jumping mechanic!
+
+Will: The ability to grab and hold them naturally felt like it needed a reason to do so, like the lantern mice that inspired them!

@@ -1,0 +1,32 @@
+0-142
+What is this pearl you've brought along with you?
+
+It has strange biological attachments. Was this pearl... from inside of you?
+
+Let me take a look at what's written on it.
+
+0 : ... : 160
+
+0 : This is... : 60
+
+0 : I assume you've already shown this to Five Pebbles? : 30
+
+I was not aware of the extent to which these affairs had reached the wider iterator populace.<LINE>Nor was I aware of the lengths that the others were going in their attempts to get into contact with us.
+
+0 : If only I could... : 60
+
+Brave messenger, do you mind if I rewrite the contents of this pearl?<LINE>After all, it has already served its original purpose.
+
+I will attach a broadcast key to it, signed with my communications serial.
+
+SPECEVENT : tag
+
+0 : ... : 160
+
+To the far west of here, past the silently towering chimney stacks of Five Pebbles' complex,<LINE>you will find a place of sunbaked lands with beautiful flora that straddle the clouds.
+
+There is a communications array located there. It is the nearest one that may still be functioning.
+
+Its systems should recognize and respond to my signed broadcast key. If you could please stop<LINE>there on your return trip to Seven Red Suns, I would be very grateful. This is my only hope to<LINE>get a message out to the local group.
+
+0 : Be careful, messenger. : 60

@@ -1,0 +1,16 @@
+0-ms_vent15-white
+Will: We knew from the start that Rivulet's campaign was going to feature a large underwater area beneath Moon.
+
+Will: However, much of Rain World's creatures wouldn't work in this unique<LINE>environment. Having only jetfish, and leviathans to avoid felt underwhelming!
+
+Will: This is what lead up toward adopting Pipster's aquapede design, and creating the giant jellyfish.
+
+Will: Underwater combat was already difficult, as spears are nearly useless. So new underwater<LINE>threats needed to be visible from far away, or are a slow and drawn out grab that leads to death.
+
+Will: The aquacenti's light, and the swaying arms of the giant jellyfish fill both of these roles.
+
+Will: Originally, we designed the jellyfish as clams with three long arms that pretend to be glowweeds!
+
+Will: However, this version of the creature never made it far, as using them anywhere else felt forced.
+
+Will: Giant jellyfish are not an amazing creature either, as their purely static nature caused difficulties with arena mode.

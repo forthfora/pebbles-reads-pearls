@@ -1,0 +1,10 @@
+0-chatlog_lm1
+[DIRECT BROADCAST] PRIVATE - Five Pebbles, Big Sister Moon
+
+SOURCE NODE TRACE: FP_ROOT, LTTM_COMM05, LTTM_ROOT
+
+FP: Please stop messaging me.
+
+FP: I cannot help you.
+
+FP: I cannot even help myself.

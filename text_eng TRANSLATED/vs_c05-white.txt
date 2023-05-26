@@ -1,0 +1,12 @@
+0-vs_c05-white
+Norgad: This was the final region artwork I worked on. I'm really happy with how it turned out, it's really bright and hopeful!
+
+Norgad: The pipes took forever though... Miracle my wrist is still attached.
+
+Norgad: ...
+
+Norgad: The region actually reused an old region's internal name (VS). That region<LINE>was joined with another I believe, and we just decided to reuse the initials.
+
+Norgad: R.I.P. Void System.
+
+Will: Unfortunately, VS wasn't anything amazing, it was just Sub with the depths ripped off it. Before<LINE>we had the conditional link system, we had to duplicate entire regions to change room connections.

@@ -1,0 +1,22 @@
+0-147
+0 : .  .  . : 30
+
+0 : Always that same blank expression... : 30
+
+0 : Familiarity is a comfort I suppose. Through whatever chittering or foolish dances your kind<LINE>uses to communicate my existence... It is clear all of you are quite tenacious, to make the<LINE>pilgrimage to me is no easy task. Even more so through my structure in its current state. : 10
+
+0 : .  .  . : 30
+
+0 : I can offer no gifts. Nor can I be saved or forgiven for what I have done. : 10
+
+0 : If you and your kind choose to meddle in the affairs of passing gods,<LINE>then I will give you my only request. : 10
+
+0 : Deep within the core of this structure is an energy rail that distributes incredible power. This power<LINE>is drawn from a mass rarefaction cell. Even in my state, a single cell should be enough to help. : 10
+
+0 : I ask you this: Remove the cell from its chamber, and bring it far<LINE>to the east. To a friend... if she is somehow still alive. : 10
+
+0 : Once the cell has been removed, my structure will begin shutting down. The pumps that<LINE>allowed me to flush the decay from my conduits will stop, and I will slowly die. : 10
+
+0 : I cannot run away from my mistakes forever. There is nothing else that<LINE> can be done now. Please, do this for me. : 10
+
+0 : I've made my choice. : 60

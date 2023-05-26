@@ -1,0 +1,10 @@
+0-hi_c04-white
+Will: Slime_Cubed's fourth layer mod was added late into development.<LINE>Originally, the fourth layer was something cut from Rain World's base game.
+
+Will: It was later restored with this mod, but lacked content to make use of<LINE>it. If we were going to add this mod, we should at least present its use!
+
+Will: As such, every region with enough background space for a presentable<LINE>fourth layer was given its own unique background screens to use.
+
+Will: Most of these new layers are uniquely made rooms being projected<LINE>behind the normal room layers, but some are unique art made in other ways.
+
+Will: Regardless, I'd call our showcase of MSC's built-in forth layer support,<LINE>to at least be somewhat of a success! Most of the rooms I did were based off<LINE>of the old alpha version! Or contain specific references to features from it.

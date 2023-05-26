@@ -1,0 +1,8 @@
+0-chatlog_ds0
+[LIVE BROADCAST] EQUIPMENT MANIFEST
+
+EM: Wide area equipment failures are approaching unsafe thresholds.
+
+EM: Notice - Estimated time to installation failure is at 90+ cycles.
+
+EM: Module advises immediate repairs within the next 30 cycles.

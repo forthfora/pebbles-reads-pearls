@@ -1,0 +1,12 @@
+0-uw_h01-white
+Andrew: The day / night cycle was actually one of the very first things to be implemented<LINE>into More Slugcats Expansion, along with water fluxing, passive rainfall, and lethal water.
+
+Andrew: Getting it to work properly with the Wall came much later, however, as the background<LINE>elements (such as the city view and distant iterators) don't change color with the palette.
+
+Andrew: Changing the colors of those requires editing their shaders, which was beyond the scope of anyone's knowledge at that time.<LINE>It took at least another year or so before the modding community figured out how to mod, edit, and add new shaders into the game.
+
+Andrew: I'm really happy we added this though... the sunset transition is really beautiful, and it gives a<LINE>lot of extra charm and character to these areas of the world that aren't under the threat of the rainfall.
+
+Andrew: Nighttime becomes a new threat as well, as all of the daytime creatures go to sleep, while a new set of creature spawns for night come out.
+
+Andrew: Metropolis is especially dangerous at night, as all of the elite guards come out to patrol. But this can also be a<LINE>reward for a skilled player who managed to survive that long, as you can snatch some really deadly weaponry from them!

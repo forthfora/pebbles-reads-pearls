@@ -1,0 +1,10 @@
+0-lf_m01-white
+Will: Rivulet doesn't have the cycle time needed to deal with the deer of Farm Array. These flooded rooms act like a shortcut for them.
+
+Will: Some slugcats might be able to make use of this by smuggling bubble weed with them for some kind of late game shenanigans.
+
+Will: At least some of these rooms are useful to other slugcats! Especially if the slugcat can easily use the gate from Subterranean.
+
+Will: We intentionally made the connections from these rooms hidden, and difficult<LINE>to reach. We had no intention of removing the primary gimmick from Farm Arrays.
+
+Will: The deer would get moody if we told them they couldn't make more friends.

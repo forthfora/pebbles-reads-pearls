@@ -1,0 +1,10 @@
+0-sh_a21-white
+Screams: Pups looked really, really weird for most of their development.
+
+Screams: They were just short slugcats with lantern mouse heads. Not even heads with consideration<LINE>put into handling, just code pulled straight from lantern mice and slapped onto the pup graphics.
+
+Screams: They were weirdly tall, too, with some of them being almost as tall as the player.
+
+Screams: Eventually, they got custom heads and faces along with both graphical<LINE>and mechanical code upgrades, turning the weird mousecats into actual slugpups.
+
+Screams: I'd say they look much better for it!

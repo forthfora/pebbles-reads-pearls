@@ -1,0 +1,6 @@
+0-ms_vent08-white
+Norgad: The region art for this place has some really delish colors.
+
+Norgad: Since the region's so varied, I had a lot of trouble deciding where<LINE>to paint. I ended up with a mix of a couple locations from different areas.
+
+Norgad: After the artwork was finished, Ongomato even made a 3D model of it! This was because<LINE>the limitations of the parallax system meant the pipe got rather flattened in the final render.

@@ -1,0 +1,10 @@
+0-chatlog_gw0
+[LIVE BROADCAST] EQUIPMENT MANIFEST
+
+EM: Internal equipment failures have exceeded safe thresholds.
+
+EM: Module is requesting repairs. 170th attempt.
+
+EM: Notice - Seismic events in region have exceeded safe threshold.
+
+EM: Module will continue to request repairs until repaired or function has ceased.

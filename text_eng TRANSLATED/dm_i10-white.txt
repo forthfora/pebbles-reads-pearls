@@ -1,0 +1,26 @@
+0-dm_i10-white
+Andrew: I start to wonder if on release, people are going to think MSC stole a lot of ideas from other modders.
+
+Andrew: There have been many mods released over the course of MSC<LINE>development that share big commonalities with features that MSC contains.
+
+Andrew: Electric Spear, Crafting, MoodMod, Forecast, RW Drought... to name just a few.
+
+Andrew: These are all actually coincidential, and I have plenty of old development<LINE>videos to show those features implemented in MSC before any of those mods existed.
+
+Andrew: And likewise those mods couldn't have been inspired by MSC, since most of<LINE>these features were never teased by us, being held in secret behind closed doors.
+
+Andrew: It's really just a case of "great minds think alike", I guess!
+
+Andrew: There are a few instances where we did use things from other mods, though, so I'd like to give those credit.
+
+Andrew: The ability to choose custom colors for your slugcats was inspired by Colorfoot.
+
+Andrew: Our Dev Tools incorporates LeeMoriya's Warp Menu mod, which was very nifty in the later parts of development!
+
+Andrew: Also thanks to Topicular for providing me the assets to replicate<LINE>their SoonTM mod in MSC, and get the 1.8 ending cutscenes in here!
+
+Andrew: As for slugpups, the first person to ever attempt an implementation of them was Topicular.<LINE>Second came Screams, at which point I quickly got in contact with him to help implement pups into MSC.
+
+Andrew: Lastly, RatRat made the third attempt at slugpups, and was<LINE>the first to bless the community with a playable version. Nice job!
+
+Andrew: Oh, and I guess this is probably common knowledge by now, but the original<LINE>Spearmaster in the first MSC version was inspired by the old Grapecat mod!

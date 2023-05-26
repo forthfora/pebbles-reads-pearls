@@ -1,0 +1,20 @@
+0-sl_roof03-white
+Will: During development we were unsure how to return the player to the area above Moon. We were not sure if we<LINE>wanted to create Moon's city either, as Pebbles' city was already very expansive, and warranted its own region.
+
+Will: Not many options were viable however, as most of them would place region gates in bizarre locations, such as Memory Conflux.
+
+Will: We were kinda forced to add Moon's city as a one way gate with no Artificer-style drone to access it.
+
+Andrew: Which by the way, if you hack Artificer here, the gate still won't open...<LINE>because Moon's city requires a different citizens id than Pebbles' city!
+
+Will: It's funny to look at the old maps where there is a gate between Moon's chamber and the rest of her structure. At<LINE>least the option we chose, of no shrine gate and having the city gate be inside Moon's shrine, made a lot more sense.
+
+Will: Even Five Pebble's city gate is a bit more awkward then Moon's, needing to connect to the outer rim of his wall!
+
+Will: The main reason we wanted the path above Moon, was to have Rivulet use the top door of Moon's chamber as<LINE>a cutscene trigger for their ending, or at least as a, "oh hello there, I wasn't expecting that!" Easter egg.
+
+Will: I'm glad we decided to add the sub-region, but it does make MS itself pretty bloated with all it has to offer...
+
+Will: If we had the option now, I would have split it off into its own region, but hindsight is 2020,<LINE>and making it big enough to be its own region is too much of an investment this late in the mod.
+
+Andrew: (He asked me, and I said PLEASE DON'T!)

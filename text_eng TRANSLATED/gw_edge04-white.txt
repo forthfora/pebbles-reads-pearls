@@ -1,0 +1,14 @@
+0-gw_edge04-white
+Will: The small area of rooms on each side of this gate are meant to act like a frustrating barrier to players.
+
+Will: Slugcats with standard mobility will find themselves blocked by tight jumps, ugly ledges,<LINE>and a high karma gate once they reach the top. Along with an awkward to use shelter.
+
+Will: Players coming from shaded will need to use wall spears, and navigate around miros birds, or cross a crumbling bridge in the dark.
+
+Will: While none of these paths are brutally hard or unforgiving, they are at least irritating<LINE>and unwelcoming to inexperienced players. The point of this is to create a segment where slugcats<LINE>with enhanced mobility can shine. In particular, Artificer's explosive jump mechanics.
+
+Will: Players passing through this room from the start of the campaign will be blocked from using<LINE>the flooded path, and be forced to make jumps that only Artificer can. As well, the high karma<LINE>gate presented at the start of their campaign is easily overcome by their karma mechanics.
+
+Will: Sometimes the best choice in design is to create an unwelcoming situation for a player. To which they<LINE>can succeed, but the cost of doing is either experience, or to return with the tools required to do it easier.
+
+Will: In this case, Artificer's tutorial is not a friendly place for normal slugcats.

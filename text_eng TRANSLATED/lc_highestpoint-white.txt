@@ -1,0 +1,12 @@
+0-lc_highestpoint-white
+Cappin: This room was quite the challenge during development.
+
+Cappin: It was one of the first rooms I made for MSC, only five or six screens tall.
+
+Cappin: When I got around to remaking it, I decided to make it absolutely gigantic.
+
+Cappin: It took several weeks to complete! Sixteen screens tall, split<LINE>between climbing up the western side and scaling the spire atop it.
+
+Cappin: Unforunately, the scale caused major preformance issues, so we were forced to cut off the bottom half.
+
+Cappin: It's still in the files, if you'd like to restore it!

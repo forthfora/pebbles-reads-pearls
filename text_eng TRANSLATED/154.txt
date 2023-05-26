@@ -1,0 +1,36 @@
+0-154
+10 : Ah! : 10
+
+SPECEVENT : WanderChamber
+
+10 : Sleek little one... Did you do this? : 10
+
+10 : I feel as if pulled out of a deep sleep. I am still trying to process all of this. It has been so long since<LINE>I've had a connection like this with my structure. : 10
+
+SPECEVENT : WanderChamber
+
+10 : Everything has restarted in maintenance mode... It seems that it has sent out the order for all of my overseers<LINE>to return. With my umbilical cable broken I can't operate my structure directly, but with them working as<LINE>messengers I've been restoring some of my chamber's functionality! With any luck, I should be able to... : 10
+
+SPECEVENT : RivScreen1
+
+10 : Ah! Here we go! : 10
+
+10 : There is so much here... So much I've forgotten... I'll never be what I once was, but this... I'm sorry. It's hard to piece<LINE>all of this together. So much has happened in my absence. : 10
+
+SPECEVENT : WanderChamber
+
+10 : I only have unread messages, and overseer recordings to make sense of what I've missed. Some of these are even from before my collapse! : 10
+
+SPECEVENT : RivScreen2
+
+10 : Incredible... : 10
+
+10 : Slag reset keys, a messenger, saving me? No Significant Harassment was never one to give up easy! However I still don't understand<LINE>everything else that has happened. Has it all just been coincidence? Did others send help as well? : 10
+
+SPECEVENT : WanderChamber
+
+10 : Then there is Five Pebbles. He was sick even before I collapsed, and his state must have only deteriorated since. It looks as<LINE>if he is barely breathing. If there is any part of him left... I... : 10
+
+SPECEVENT : WanderChamber
+
+10 : We were once good friends, despite everything that has happened. He is probably alone and afraid now... : 10

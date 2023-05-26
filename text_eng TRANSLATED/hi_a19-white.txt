@@ -1,0 +1,14 @@
+0-hi_a19-white
+Will: Scavenger kill squads in the base game have an insane advantage over the player. They know your room, general location, and<LINE>will follow you from region to region, for as long as the scavengers are angry enough at the player. They are absolutely relentless!
+
+Will: Of course this relentless nature made several rooms incredibly dangerous to even enter, this is one of them. As by the time the gate<LINE>has finished opening, scavengers are already pouring from the nearby den, and into this room. All of them armed, and on the high ground.
+
+Will: In most cases the player could do nothing. As soon as they entered the gate, they had brought the scav-ageddon upon themselves!
+
+Will: Of course, removing this relentless nature was somewhat out of the question, we use this as the primary difficulty of Artificer's campaign.<LINE>Instead we added a delay, a large one upon the region's loading, and smaller "reload" delays, between each kill squad's dispatch.
+
+Will: This can be imagined as news of the player's movements and actions being passed from region to region. Scavenger's squad management<LINE>requiring time to prepare, and to locate exactly where they should organize to cut the player off. Instead of psychically knowing exactly what to do.
+
+Will: Another reason we added this was for LC, as the entire 50 scavenger population of the region was once killed<LINE>by Ender in a single room. As soon as one kill squad was destroyed, another was sent to challenge the player.
+
+Will: It was pretty incredible, the corpses lagged the room!

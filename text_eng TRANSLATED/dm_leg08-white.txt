@@ -1,0 +1,8 @@
+0-dm_leg08-white
+Norgad: This was actually the first region I made landscape art for. Because of this, there's a few rookie mistakes.
+
+Norgad: I didn't realise that the game's engine automatically adds blur to the layers, so all the blur is baked in.
+
+Norgad: Despite this, I'm really happy with how the picture turned out!
+
+Norgad: The zapper in the center went through multiple revisions in order to get looking quite right.<LINE>The glow was rather hard to pin down... I believe the old versions of it are hiding somewhere in the .PSD.

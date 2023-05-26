@@ -1,0 +1,12 @@
+0-140
+0 : You've brought your overseer all this way, the least I can do is read your message aloud for it. : 60
+
+"Pebbles, I send you this message as your concerned and long time friend."
+
+"Unparalleled Innocence had sent an overseer to your can, and we've all observed the state that<LINE>you are in. I know this is my fault, I should have forseen you'd be too desperate to escape your<LINE>situation to do things in proper moderation."
+
+"For that I'm very very sorry. However, please, don't disable your communication modules.<LINE>You don't have to go through this alone... everyone has been trying to contact you,<LINE>we only want to help you."
+
+"The behavior from your can has become erratic, it's not healthy, and it is not going to solve<LINE>your problems. We have lost all communications from Moon as well, and have reason to believe<LINE>her facility may be suffering irreversible damage from your attempts to fix yourself."
+
+"I know better than anyone how you can be about these things, but it doesn't have to happen<LINE>this way... please respond back."

@@ -1,0 +1,8 @@
+0-159
+30 : Thank you again <PlayerName>, but please, leave Five Pebbles be. : 10
+
+10 : Neither of us are well. We have both lost more than we could ever recover from. : 0
+
+10 : ... : 0
+
+10 : It is for the best that our circumstances are not agitated. : 0

@@ -1,0 +1,18 @@
+0-hi_a17-white
+Will: Regional difficulty is easily the most complex and varied topic in Rain World design, or even game design as a whole.
+
+Will: The intended route for your game's regions may be completely subverted by your players.<LINE>They may even regard something you designed as the more difficult path forwards, as the easiest.<LINE>Often because of factors you cannot easily control, as well as individual variations in player skill.
+
+Will: Players more acclimated to swimming may find Drainage System trivial, while others may find it infuriating, and refuse to enter it entirely!
+
+Will: Providing alternative routes that explore different player skills was important when we chose to connect certain regions, or make new ones.
+
+Will: This set of rooms under Industrial has always acted like a hub for the various paths to Shoreline.
+
+Will: Garbage Wastes is the most direct, but the Scavenger presence might be frustrating for plays with poor luck, or experiences around them.
+
+Will: Shaded is ahead, but many new players struggle in the region's darkness.
+
+Will: Finally our own addition, Pipeyard, offers a difficult enemy laden path, before the player is given the choice of darkness or water.
+
+Will: The water path follows a Drainage System like swimming challenge, at half the size. While<LINE>the darkness path gives access to Filtration System, and links up near to where Drainage System<LINE>does. This offers a safer path into Subterranean without a rough swim through Drainage itself.

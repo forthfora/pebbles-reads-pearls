@@ -1,0 +1,10 @@
+0-sb_a04-white
+Will: A feature that didn't make it into the final version of the mod was a mushroom layer to the threat tracks.
+
+Will: This feature is only dummied out however. Adding an (m) to a layer, like used by the day and night threat type is all that is needed!
+
+Will: The warbling confused sounding noise heard in the OE threat music at night is the only layer that was made for this mushroom effect.
+
+Will: We never got around to making layers for all the other regions that have threat tracks, so the feature was canceled.
+
+Will: Maybe modders will have some fun making their own layers, and reviving the mushroom threat effect!

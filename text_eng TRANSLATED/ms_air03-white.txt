@@ -1,0 +1,12 @@
+0-ms_air03-white
+Will: Glowweeds are one of my favorite new additions to the game! Creating<LINE>a unique object that solved multiple problems at once is a great feeling.
+
+Will: We first needed to solve the problem of food beneath Moon.
+
+Will: These areas were so isolated and alien that simply placing fruit or mold didn't fit. As well, these areas<LINE>were also dark. Rivulet needing to explore in complete darkness while drowning didn't seem like a fun idea.
+
+Will: The solution to these problems was to make a balanced mix of an answer to all of them at once!
+
+Will: We created a new unique food that was also a light source. We then allowed Rivulet<LINE>to eat food underwater to avoid player irritation. Finally, we made each glowweed provide<LINE>half a pip of food, so we could place excessive amounts to light a room.
+
+Will: Two bonus upsides are that jetfish will compete with the player to collect them, and the<LINE>green glow of the plants also defined a bio-luminescent lit cave theme that defined lower MS!

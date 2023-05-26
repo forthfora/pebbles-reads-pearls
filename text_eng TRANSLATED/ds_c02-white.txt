@@ -1,0 +1,14 @@
+0-ds_c02-white
+Will: This room brings back some particularly fond memories from playing 1.0 back in the day.
+
+Will: I nearly gave up the game entirely after wandering into Drainage System, and making it<LINE>all the way to the gate. Only to save before the gate, die in Filter, and be stuck on the side<LINE>of Drainage, with only the tunnel swim for escape. I'm happy I didn't give up back then!
+
+Will: It did lead to a very large desire to tweak swimming to be less frustrating, but that is an extremely sensitive mechanic!
+
+Will: If we extend breath timing, we could mess with the feeling of dread that comes from long swims.<LINE>However, there is clearly some element of swimming that felt unfair, especially for early players.
+
+Will: The only major change we made to swimming is the rate of upwards swimming slugcat will attempt while<LINE>drowning. The original game applies this force linearly, often trapping you against the ceiling very quickly.
+
+Will: MSC applies this force exponentially, giving you a longer period of control, but with the same amount of time until you drown.
+
+Will: This allows players to make those final course corrections that might save their lives, but without ruining the drowning time's balance.

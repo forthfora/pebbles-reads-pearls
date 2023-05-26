@@ -1,0 +1,48 @@
+0-132
+This is old broadcast data from the local group. It has decayed too rapidly, and nothing is left. Sorry.
+
+I can only read some dates and the length of messages. The rest is gone.
+
+This was a broadcast node long ago. It is in read-only mode now. The last transmission recorded is "Hello? is anyone still reading me?"
+
+There is nothing left on it.
+
+Not much of this remains. It was never meant to be used for long term storage.
+
+Long ago there was a broadcasting network that allowed my kind to communicate over long distances. This is a relic of that.
+
+It's empty. That's a shame too. It would have been fun to read an old conversation.
+
+"Do you think the local group is going to hold out much longer? It's been impossible to get a message to Chasing Wind for several<LINE>cycles now. I hope they're alright." This was a broadcasting node long ago. Now it just holds a reminder of our isolation.
+
+The data on this has burned away with age.
+
+It's broadcast data, but most of it is corrupted. It may have tried to enter read-only mode at the same time as recording?
+
+This was a relay from long ago. I can only read the names here. They remind me of better times.
+
+"Transcendental Inversion! Transcendental Inversion! I keep telling you this, but it's clear that the influences of-," and it<LINE>cuts off after that. I have no clue what this conversation was about.
+
+This is a cached log of equipment manifests packaged for Five Pebbles. It has information about the status of<LINE>machinery stationed on the surface. I don't think he would have cared to read this anyway!
+
+It's blank. I can read some header information, but otherwise it's decayed.
+
+It's effectively blank.
+
+It's inventory from some surface stationed machinery. It contains a history of fault information and repair requests.
+
+It is an equipment manifest from some kind of pump. It has an extensive log of fluid pressures, but nothing that is too interesting.
+
+This is damaged. I can only read some names and dates.
+
+This is data for a purposed organism.
+
+It's an image of a small blue creature similar to yourself.
+
+It's a picture of scavengers with an excessive collection of pearls. It looks like someone was sharing pictures of the native<LINE>scavenger's odd behaviors over the broadcast network. I wonder why one scavenger would even need such a giant stash of pearls.
+
+It's an image of three overseers from different iterators, and I imagine a fourth took the picture. It was sent through a broadcast.<LINE>Possibly some kind of memento? It's not often that such a variety of overseers are together in one place, I wonder whose they are.
+
+This is a corrupted broadcast. I can't read anything except the header.
+
+"This will be my final broadcast to the local group. Within several cycles-," and the rest is corrupted. It's an old broadcast node's<LINE>final recording. Unfortunately these were not made for long term storage, so the rest of the message has been lost to decay.

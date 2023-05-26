@@ -1,0 +1,18 @@
+0-dm_u07-white
+Andrew: Why did I create a creature as horrifying as the Miros Vultures?
+
+Andrew: They were actually created way back in the early ages of the Rain World<LINE>modding community, even predating the very first version of the MSC mod.
+
+Andrew: Back in those days we were simply interested if we even could create<LINE>a custom creature, so I paid no consideration as to whether I should.
+
+Andrew: To start with something easy-ish, I decided to use an existing creature's code as a base, and just combine<LINE>together bits and pieces from elsewhere to make some horrifying chimera. Both in function and in implementation.
+
+Andrew: Since I had them functioning and available already, I decided to just<LINE>toss them into MSC as well. Because why not? What's the worst that can happen?
+
+Andrew: Lore-wise, I see Miros Vultures as creatures that thrive only in dark areas<LINE>and cold areas. Though between the two, their preference is cold over dark.
+
+Andrew: They make their first appearance early in the timeline, thriving<LINE>in the dark regions underneath Pebbles' and Moon's superstructures.
+
+Andrew: Once Moon collapsed, they abandoned the dark areas of Pebbles structure for<LINE>the more favorable blizzard-like environments that began to form at Bitter Aerie.
+
+Andrew: Then by Saint's time, they had all the opportunity to spread themselves out across<LINE>the snowy landscape, and become a horrifying threat that plagued the entire land.

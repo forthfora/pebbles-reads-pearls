@@ -1,0 +1,8 @@
+0-160
+SPECEVENT : SitDown
+
+10 : You feel it too, don't you, strange one? : 10
+
+10 : We've only just met, but our perceptions will soon part ways. : 10
+
+10 : Go on, our cycles will meet again. : 10

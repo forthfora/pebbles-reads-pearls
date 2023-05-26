@@ -1,0 +1,12 @@
+0-lm_wall02-white
+Will: Moon's exterior rooms went through a considerable rework midway through development.
+
+Will: The original exterior of Moon was part of Waterfront Complex, and<LINE>included all of her leg, and up to the gate that is still used on her wall.
+
+Will: Originally, the players would climb her leg, enter to the her wall, and enter Moon from<LINE>the side. While this worked, it created a complex overlap of region themes that felt unfitting.
+
+Will: The original Precipice only included the scaffolding between Moon and Pebbles as well,<LINE>and the upper area felt completely disconnected, just as badly as Moon's leg in Waterfront.
+
+Will: To fix this, we moved all of Moon's structure, exterior and all, inside of its own region, while<LINE>also expanding Waterfront's upper areas to include giant towers that were destroyed by Moon's collapse.
+
+Will: This allowed us to link the lower region, with the upper Precipice,<LINE>and also gave players more options to path in and out of Moon's structure.

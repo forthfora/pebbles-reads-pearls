@@ -1,0 +1,18 @@
+0-123
+It's very soggy.
+
+This appears to be a tattered piece of fabric. From what it used to be a piece of, I wouldn't be able to trace its origins.
+
+If it were in better condition it might be useful to provide you some protection from<LINE>the elements. In its current state, however, I don't suppose it has much worth to you.
+
+Unless, perhaps... <PLAYERNAME>, did you bring this as a gift for me?
+
+Ah!~ In that case, let me just...
+
+SPECEVENT : cloak
+
+...
+
+There! How does that look? I think it actually fits quite well.
+
+Thank you, <PLAYERNAME>.

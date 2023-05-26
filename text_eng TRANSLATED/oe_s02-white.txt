@@ -1,0 +1,12 @@
+0-oe_s02-white
+Will: We planned very early on that OE would have the old alpha design for the region's shelters.
+
+Will: Initially we only had the intention to reference the geometry of them, with hints to shutters, and a shelter beneath the main chamber.
+
+Will: However, players seemed underwhelmed with this, or were not aware at the style of shelter we were invoking!
+
+Will: After putting it off for quite a while, during one of OE's many reworks, we gave this room<LINE>a complete makeover, and assembled the parts needed to make a functional alpha style shelter.
+
+Will: We only intended to have one of them, but it eventually became clear that OE was<LINE>much too shelter sparse. So, with the ability to attach multiple doors to a single ancient<LINE>shelter, we used this problem as a chance to flex the creativity this shelter type offered!
+
+Will: I'm excited to see what modders will create with this!

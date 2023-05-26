@@ -1,0 +1,8 @@
+0-rm_lscoreaccess-white
+Dakras: This chamber for the energy cells is the most impressive thing I've made.
+
+Dakras: 25x25 with all of the collision done by hand, which took forever.
+
+Dakras: It's actually why the SpecsEditor exists too! I got fed up with doing<LINE>the collision by hand, but I still tend to do it by hand anyway at this rate.
+
+Dakras: Where they're used makes it so worth it to see though.

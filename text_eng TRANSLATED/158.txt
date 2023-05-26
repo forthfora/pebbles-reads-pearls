@@ -1,0 +1,6 @@
+0-158
+30 : You get these at Five Pebbles'?<LINE>Thank you so much. I'm sure he won't mind. : 10
+
+10 : ... : 0
+
+10 : Or actually I'm sure he would, but he has so many of these<LINE>it doesn't make any difference to him.<LINE>For me though, it does! Thank you, little creature! : 0

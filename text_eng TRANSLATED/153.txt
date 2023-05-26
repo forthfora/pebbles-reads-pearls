@@ -1,0 +1,16 @@
+0-153
+0 : I see that things have fallen into place. : 60
+
+0 : Countless iterations, work groups, series permutations, simulations... and not once<LINE>did I foresee the possibility of placing my fate into the hands of a beast. : 10
+
+0 : However, I must thank you. What you have achieved here was beyond my expectations. : 10
+
+0 : It appears that I was wrong about your kind. : 10
+
+0 : .  .  . : 30
+
+0 : While I wish there was more that I could do for you, my time is running out. : 10
+
+0 : These ordeals have made me understand what they all tried to tell me. : 10
+
+0 : ...I don't have to go through this alone. : 60

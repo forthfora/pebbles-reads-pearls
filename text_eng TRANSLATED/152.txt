@@ -1,0 +1,20 @@
+0-152
+0 : .  .  . : 60
+
+0 : Listen to me, land fish. : 30
+
+0 : The last of my generators has reached the end of its operating life. : 10
+
+0 : Then the facilities of my group senior have mysteriously reactivated long<LINE>after she should have been permanently catatonic. : 10
+
+0 : Now, you suddenly appear on the floor of my chamber. : 10
+
+0 : .  .  . : 30
+
+0 : I don't understand what is happening here, but it is clear that it's all connected.: 10
+
+0 : Did she send you here? : 30
+
+0 : I have nothing to offer you that you do not already have, nor am I in a state<LINE>capable of doing so. I cannot help you. I cannot even help myself. : 10
+
+0 : All I can advise is for you to leave quickly, while you still can. : 60

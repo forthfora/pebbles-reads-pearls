@@ -1,0 +1,14 @@
+0-vs_c13-white
+Will: Pipeyard was created pretty quickly, and was mostly the result of a lack of restraint on my part.
+
+Will: I wanted to redo the Root in some way that would work well with MSC, but nothing quite worked.<LINE>The big concern was that the Root's path from the exterior to sub wouldn't work well for late game.
+
+Will: After a lot of rethinking, I decided to make the area about giving Sky Islands more routing options.
+
+Will: In the base game it acts only as a difficult path between farm and CC, but now<LINE>it offers a third path. One that allows access to sub, industrial, and shoreline.
+
+Will: However, the sub and shoreline paths are a bit nasty to take.
+
+Will: The shoreline path itself was very fun to make, invoking the same feelings<LINE>that made me question Rain World's design back when I first played it!
+
+Will: Being trapped at the far end of a painful underground swim, but making the end of that segment worth it felt right to me.

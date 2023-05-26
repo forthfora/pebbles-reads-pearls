@@ -1,0 +1,8 @@
+0-ds_b03-white
+Will: Drainage System has a bit of a bad reputation. Mostly to new players as being a<LINE>miserable experience, learning to swim in tight tunnels with no easy chance to fix your<LINE>mistakes. As well as many one way paths that lock the player into rough areas of the region.
+
+Will: We wanted to change the region up, without destroying the personality that the<LINE>rough edges give it. Would it still be Drainage System if we removed all the drowning?
+
+Will: Aside from the fluxing water we added for Artificer, we added some more poles and paths. A way to return to<LINE>the upper levels of the region, and at the same time making the drowning tunnel a sort of "fast travel" for the region.
+
+Will: Our changes to swimming also cut down on drowning related incidents, without entirely removing the danger of the tunnel.

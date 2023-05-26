@@ -1,0 +1,14 @@
+0-162
+Hello <PlayerName>. Are you lost?
+
+I am sorry to say that there is nothing here for you.
+
+0 : You've been given the gift of communication. So I can only imagine that you have<LINE>met Five Pebbles. You must already understand how little of me remains functional. : 5
+
+However, it is nice to have someone to talk to after all this time. My last visitor<LINE>was very sick, so their visits here were not for very long.
+
+I can only hope to remember them for as long as I can in my current state.
+
+Maybe you know them? They left some time ago. My last overseer watched them head to<LINE>the west. Perhaps they were returning home with what little time they had left.
+
+You are welcome to stay as long as you desire <PlayerName>. It is nice to have company.

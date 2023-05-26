@@ -1,0 +1,8 @@
+0-lc_topdoor-artificer
+Will: One of the more crazy ideas we had for Artificer's campaign was to allow them to find the joke rifle post-game.
+
+Will: We were likely going to alter it to be some kind of mass accelerator that the<LINE>scavengers had stolen. Similar to their abuse of the power cells, or their electric spears.
+
+Will: However, this concept eventually died out over the course of development. A lot of the more wild ideas of<LINE>MSC were slowly reigned in, and some ideas were dropped entirely due to their conflicts with the official lore.
+
+Will: In the end, we decided to unlock the joke rifle for arena by moving it to challenge mode, as a small nod to this phase of development.

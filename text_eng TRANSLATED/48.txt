@@ -1,0 +1,22 @@
+0-48
+I am growing increasingly impatient with the traffic of your kind through me and my premises.
+
+During previous interactions, I have been rewarded no other response than a blank stare. Yet you apparently have<LINE>sufficient ability for communication to circulate complex instructions on how to enter this chamber among each other.
+
+PEBBLESWAIT : 15
+
+You and your kind have the same problem as everyone else, from the microbes in the processing strata<LINE>to me, who am, if you excuse me, godlike in comparison. We all want a way out. It is only unfortunate<LINE>that you have collectively decided on... me as your solution to that very elemental desire.
+
+The last one I gave some help and some general directions. I will do the same for you.
+
+PEBBLESWAIT : 35
+
+Go west. Past the Farm Arrays. Where the land fissures, go down into the earth and search your way deeper.
+
+Now in return I ask you to use whatever grunts, moans and eye-twitches you employ to forward a message to your community.
+
+10 : 25 : Please stop scratching your way through my memory arrays.
+
+PEBBLESWAIT : 15
+
+Speaking of, on your way out please use the access shaft.

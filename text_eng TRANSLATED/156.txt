@@ -1,0 +1,10 @@
+0-156
+SPECEVENT : SitDown
+
+10 : I know he will understand the chance we've both been given! Even if he still holds the same anger he once did... : 10
+
+SPECEVENT : RivEndingFade
+
+10 : We still have to try. Let's make things right, little friend. : 10
+
+SPECEVENT : RivEndingCredits

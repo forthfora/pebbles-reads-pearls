@@ -1,0 +1,16 @@
+0-161
+SPECEVENT : SitDown
+
+10 : Hello. You can understand me, can't you? : 80
+
+10 : What an unusal being you are. By what<LINE>mechanism have you achieved such attunement? : 60
+
+10 : ... : 40
+
+10 : It has been a while since I had a life form like you stumble into my chamber. : 10
+
+10 : While I'm relieved that some of your species have managed<LINE>to persist even now, I don't envy your situation. : 10
+
+10 : Hopefully you can find an escape to your suffering. : 10
+
+10 : Until then, I'll be here, if my company brings you any comfort. : 10

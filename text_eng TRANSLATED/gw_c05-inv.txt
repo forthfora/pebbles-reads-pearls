@@ -1,0 +1,16 @@
+0-gw_c05-inv
+Screams: Devtools allows you to load in as a slugpup, but the pup's version of the world is empty.
+
+Screams: With some simple overrides in the code, I once upgraded this into forcing the<LINE>game to always spawn you in as a pup regardless of the slugcat you're supposed to be.
+
+Screams: Of course, I immediately tried playing all the new slugcats like<LINE>this. I will now list them off in order of (estimated) playability:
+
+Screams: Survivor, Monk, Hunter, and Gourmand are the most feasible because<LINE>they don't have custom regions that rely on huge movement changes.
+
+Screams: I imagine ascending as Rivulet would be possible with some quick thinking,<LINE>but giving the power cell to Moon is a no-go because of Submerged Superstructure.
+
+Screams: With Artificer, you can't use scav karma to leave Garbage Wastes, so<LINE>you're stuck as a six-year-old pursued by killsquads in an acid field forever.
+
+Screams: Saint and Spearmaster can't get out of their intro rooms without ridiculous<LINE>luck, and Saint's intro crashes the game anyway without further modification.
+
+Screams: It really puts the helplessness of the pups into perspective, doesn't it?

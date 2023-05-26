@@ -1,0 +1,10 @@
+0-vs_f01-white
+Andrew: There was actually a ton of thought that went into the creatures that spawn in each region, at each spot on the timeline.
+
+Andrew: Will had actually put together an entire illustrated timeline chart for every creature<LINE>in the game, showing their presence, evolution, and extinction events across the game's history.
+
+Andrew: As well as another long document explaining the origins, food chains, migration<LINE>patterns, preferences, and other attributes of each creature's species over time.
+
+Andrew: All of these considerations were factored into which creatures to include and exclude in each region for each character.
+
+Andrew: Will also wrote a region creature density analyzing script, which he used to balance out creature spawns in each<LINE>region to keep difficulty levels consistent, and creature densities appropriate based on the global population decay.

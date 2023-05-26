@@ -1,0 +1,16 @@
+0-56
+I am not without responsibility for her situation. It would only be suiting that I aided in this... rescue mission.<LINE>As other endeavors have proven futile, I'm not ashamed to admit I've become more invested in day to day matters.
+
+I will do what I can to assist you.
+
+PEBBLESWAIT : 80
+
+Unless you are aware, you are not well.
+
+PEBBLESWAIT : 10
+
+I was not a medical facility even when the equipment was functioning,<LINE>but I will attempt to do something to buy you a little time.
+
+SPECEVENT : karma
+
+PEBBLESWAIT : 20

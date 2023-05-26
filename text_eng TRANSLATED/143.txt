@@ -1,0 +1,40 @@
+0-143
+0 : .  .  . : 60
+
+0 : ...is this reaching you? : 60
+
+PEBBLESWAIT : 20
+
+0 : I suppose it was only a matter of time before you ended up here. : 30
+
+Your journey throughout my facility grounds has been incessantly brought<LINE>to my attention by my overseers, thanks to the device that follows you.
+
+It is the citizen ID drone of one of my long departed creators. It seems<LINE>to have been damaged, and imprinted itself with you on reactivation.
+
+Much of the data on the drone has been corrupted. Allow me to do my duty as an Iterator and resync it to my structure.
+
+SPECEVENT : resync
+
+0 : .  .  . : 60
+
+1000 : Little ruffian. You are stuck in a cycle, a repeating pattern. I assume you have come here because you want a way out. : 30
+
+However, there is little I can do. A primal urge, one that tears from deep inside your very core, keeps you bound here.
+
+0 : Even with my divine influence, there is nothing that can be done. : 30
+
+However, if you intend to carry that device around and masquerade as one of my citizens, then perhaps<LINE>you can at least properly perform your responsibility of tending to this superstructure.
+
+From the glimpses I've been shown of your journey so far, it is apparent you have a need to inflict violence<LINE>against the scavenger population. While I find your way of life appalling, it seems we share a common enemy.
+
+A large pack of them has made a home in my city, and have been causing progressive damage to<LINE>the roof of my structure in their attempts to gather scrap metal and other mechanical parts.
+
+0 : As my dutiful citizen, I would encourage you to return home to your city and pay them a visit. : 30
+
+0 : Perhaps in that way, we can both depart from this interaction with something we desire. : 30
+
+0 : ... : 60
+
+0 : I wish you the best in your travels, citizen.: 30
+
+0 : But unless you have something interesting to show or bring to me, it is time for you to leave. : 60

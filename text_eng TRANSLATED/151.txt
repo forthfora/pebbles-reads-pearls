@@ -1,0 +1,8 @@
+0-151
+0 : .  .  . : 30
+
+0 : I presume the generator failing was your doing? : 30
+
+0 : Thank you. I suppose this makes us... even? : 30
+
+0 : Goodbye, wet mouse. Send my regards. : 60

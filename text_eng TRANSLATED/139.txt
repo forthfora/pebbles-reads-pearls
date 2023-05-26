@@ -1,0 +1,22 @@
+0-139
+Poor thing. There are no records of your body's blueprints. Nor is it reasonable to<LINE>assume your extreme adaptations are possible through... natural means.
+
+0 : You are welcome to stay if you do not interrupt. : 30
+
+I would not mind some company. My neighbor, Five Pebbles, has become dangerous, resulting in significant<LINE>damage to my structure. I have lost access to all communications devices, and all attempts to directly<LINE>reach him through our tether have been met with silence after our last conversation.
+
+0 : If he.... : -30
+
+SPECEVENT : panic
+
+0 : If he ddd... d d d : -30
+
+0 : ... : 720
+
+0 : If he does not stop soon... : 60
+
+0 : ... : 30
+
+Isn't it funny, my unfortunate little friend? For everything that I am, my last memories may be of<LINE>monologuing to a strange animal that has lost its way into my chamber.
+
+There is not much I can do. At least you can make yourself at home.

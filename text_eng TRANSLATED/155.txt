@@ -1,0 +1,14 @@
+0-155
+SPECEVENT : RivScreen3
+
+10 : "I cannot run away from my mistakes forever; Please understand." Five Pebbles, what have you done... I've been given<LINE>so much already, and now you've given all you had left. : 10
+
+SPECEVENT : SitDown
+
+10 : It does not matter what happened between us. If he still held the same anger he once did, then none of this would be<LINE>possible. We've been given the chance to make things right, and he deserves to know what he did wasn't pointless. : 10
+
+SPECEVENT : RivEndingFade
+
+10 : I'm so thankful, for everything. : 10
+
+SPECEVENT : RivEndingCredits

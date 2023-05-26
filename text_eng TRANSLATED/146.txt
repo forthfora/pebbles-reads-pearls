@@ -1,0 +1,8 @@
+0-146
+0 : .  .  . : 30
+
+0 : I've long since lost control of most of my facilities, and much of my<LINE>processing and functions have taken on a mind of their own. : 10
+
+0 : The last of my generators has also just abruptly reached the end of its operating life. : 10
+
+0 : How you've made it this far alive, I do not know...<LINE>but if you value your life, leave and never return. : 30

@@ -1,0 +1,12 @@
+0-rm_a04-white
+Will: This region was never really intended to be explored without either zero gravity or the<LINE>power cell. Screams would eventually explore this region to discover potential soft locks.
+
+Will: This region is a bit horrifying from a level design perspective. At least without either of the<LINE>tools intended to tackle it. At least we made sure you could leave it if you did go in here without them.
+
+Screams: Exploring the Rot without its intended tools is by far the greatest challenge Rivulet's world has to offer.
+
+Screams: In the absence of low-gravity jumps, you have to backflip and spear-pin your way up walls to progress.
+
+Screams: The thing about Rain World's level design is that it's not supposed to feel<LINE>focused on you, and normal-gravity Rot is the culmination of that in that it's<LINE>*actually* not meant for your skillset. It's perfection, and it wasn't even trying.
+
+Screams: In case you're wondering, I only found one softlock.

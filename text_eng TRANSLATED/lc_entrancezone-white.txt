@@ -1,0 +1,10 @@
+0-lc_entrancezone-white
+Andrew: Pebbles was at one point going to have more interaction with the player.
+
+Andrew: The drone has the functionality for the citizen to communicate directly with their iterator.
+
+Andrew: Imagine poor Pebbles in the olden days having to put up with "Hey Siri"/"Hey Alexa" type of inquiries from the Ancients.
+
+Andrew: The player would be able to hold pearls up to the drone, and it would scan<LINE>them. Then Pebbles would read the pearl contents remotely to the player via the drone.
+
+Andrew: But realistically, Pebbles would want to have as little interaction with the player as possible.

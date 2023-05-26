@@ -1,0 +1,12 @@
+0-oe_ruin17-white
+Andrew: The current Stowaway creatures are extremely far removed from their original concept.
+
+Andrew: We had an idea for a flying bug creature that would appear as a very rare, special encounter in various regions.
+
+Andrew: If the creature targeted you, it would attempt to projectile-inject you with some sort of stinger.
+
+Andrew: If successful, you would be stunned temporarily, and then the creature would flee, but nothing much else would happen.
+
+Andrew: Upon waking up the next cycle after being injected, you would have<LINE>some small growth on your body, which would also give you some kind of debuff.
+
+Andrew: Over the next several cycles, the growth would get bigger, until eventually erupting out a swarm of tiny baby Stowaway bugs.

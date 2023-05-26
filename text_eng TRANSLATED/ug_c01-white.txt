@@ -1,0 +1,10 @@
+0-ug_c01-white
+Norgad: I actually did a little bit of concept art for this region, so<LINE>the region art was a little easier to derive from exploring the levels.
+
+Norgad: I'm really happy with how the pipes came out, and the cyan rim light is nice too!
+
+Norgad: I also used the artwork for this region to test doing mockups of the game's parallax effect outside of the game.
+
+Norgad: I bodged together an entire 3D parallax system including depth of field inside of<LINE>After Effects. It was only after this that I found out AE natively supports 3D and DOF.
+
+Norgad: ;v;

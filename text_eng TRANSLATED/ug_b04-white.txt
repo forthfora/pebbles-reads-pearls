@@ -1,0 +1,8 @@
+0-ug_b04-white
+Andrew: Undergrowth and Waterfront Complex probably don't quite merit being<LINE>their own regions, but their creation predates our conditional links system.
+
+Andrew: Back then, as a technical limitation, allowing a region to be this<LINE>much different was only possible by making it an entirely separate region.
+
+Andrew: Later, conditional links allowed us to create things like "Past Garbage Wastes".
+
+Andrew: And allowed it to be incredibly different from "Future Garbage Wastes", despite them both being the same region internally.

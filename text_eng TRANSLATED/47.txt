@@ -1,0 +1,38 @@
+0-47
+I barely listen to the overseers any more. I have concluded that the movements of<LINE>animals on the premises absolutely and completely lack relevance to my endeavours.
+
+PEBBLESWAIT : 15
+
+With you, they have been very persistent ever since you entered my Farm Arrays. You were on an unusually deliberate path.
+
+0 : 15 : Now you are here.
+
+The images showed you carrying something. You are not any longer.
+
+Did you lose it along the way? Or did you give it to Looks to the Moon?
+
+PEBBLESWAIT : 10
+
+In the latter case, I hope it was of some help to her. Not that I can imagine what one<LINE>of you could be able to do for one of us, but she needs all the help she can get.
+
+15 : 20 : ...
+
+PEBBLESWAIT : 25
+
+You seem to have been in contact with an iterator before, so perhaps you are already aware.
+
+You and I have something in common, little creature. We both have something... unfortunate growing in us.
+
+In my case, there is not much to be done. For you however, there might be a way. The old path.
+
+PEBBLESWAIT : 10
+
+Go to the west past the Farm Arrays, and then down into the earth where the land fissures, as deep as you can reach,<LINE>where the ancients built their temples and danced their silly rituals.
+
+I will give you something that might be of help.
+
+SPECEVENT : karma
+
+PEBBLESWAIT : 25
+
+10 : 30 : I suggest you hurry.

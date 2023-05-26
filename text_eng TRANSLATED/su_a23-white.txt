@@ -1,0 +1,8 @@
+0-su_a23-white
+Screams: The initial version of slugpup AI was lacking, to say the least.
+
+Screams: I wasn't setting my priorities right when I built it, and the result was a chaotic mess,<LINE>to the point where even getting them to follow me up this pole was a monumental achievement.
+
+Screams: They didn't even look the same, as all of the big changes that<LINE>actually made them look and feel like pups were much later in development.
+
+Screams: The "old pups" could barely get over one-tile ledges, so it's no wonder<LINE>I eventually scrapped the AI entirely and rebuilt it from the ground up.

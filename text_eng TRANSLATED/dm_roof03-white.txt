@@ -1,0 +1,10 @@
+0-dm_roof03-white
+Will: Early versions of this room had a long fake hallway where this gate door is now.
+
+Will: Originally, you would pass through an always open region gate on your way to Moon.<LINE>This gate would later act as the return path for Rivulet after activating Moon's heart.
+
+Will: However, having a gate in the middle of Moon's GSB, made no sense at all. Eventually, we added<LINE>Moon's city as a sub region, and moved that fake gate to act as her Underhang's always open gate.
+
+Will: I'm kinda glad we moved an actual gate up here, even if Spearmaster is unable to use it.
+
+Will: The mystery of what lies beyond it makes for a very fun tease at slugcats further in the timeline!

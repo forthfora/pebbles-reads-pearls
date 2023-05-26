@@ -1,0 +1,14 @@
+0-lf_j01-white
+Will: The AI of the Farm Array deer has been modified considerably from the base game.
+
+Will: At first we only added an option for turning the deer, and stopping their current path, but this ran into more problems.
+
+Will: We ultimately HAD to reconstruct the deer AI entirely, and correct an entire list of small issues and potential mistakes.
+
+Will: One example is that deer were incapable of getting unstuck because their bodies are locked<LINE>in place at the end of a path. As well, deer entering a room would begin resting before they wandered.
+
+Will: This meant that deer would enter a screen, stop, rest, and run out of room time. Leaving the room before they did anything.
+
+Will: Deer also moved in the direction their body faced while entering the room. Due to<LINE>their rest location they would turn around while entering. Often this leads to them leaving<LINE>the room, but sometimes they would just vibrate against the room border the whole cycle.
+
+Will: This doesn't even begin to describe the deer-on-deer interaction and priority<LINE>issues that Joar addressed in the 1.5 update. Hopefully, we have finally tamed these<LINE>terrible beasts, while not removing the durpy behavior that made them special.

@@ -1,0 +1,16 @@
+0-157
+SPECEVENT : SitDown
+
+240 : Ruffles, don't fall asleep here, it's not safe! : 40
+
+50 : Ah, such a small delicate thing you are. : 80
+
+SPECEVENT : WakeupPlayer
+
+30 : And yet, you rebooted a giant organic superstructure and brought peace between<LINE>two godlike entities of which you have no understanding. But why? : 40
+
+SPECEVENT : WanderChamber
+
+10 : I don't know if I'll ever understand, but in any case, you're always welcome here. : 10
+
+10 : For now, though, I still have a lot of information to catch up on. : 10

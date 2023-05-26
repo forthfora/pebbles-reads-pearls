@@ -1,0 +1,14 @@
+0-lc_rooftophop-white
+Andrew: Metropolis originally had a dust storm effect as a major part of the region, that would appear periodically throughout the cycle.
+
+Andrew: Without having too clear of a goal of the gameplay implications, and also mainly feeling it would be<LINE>excessive for a region that already had a lot of other stuff going on, we eventually decided to scrap it.
+
+Andrew: I'm really sad we had to drop it, because the visuals for it were pretty much already fully implemented by Ongomato by that point.
+
+Andrew: First you would see a huge sky-scraper sized tidal wave of dust in the far background rush over the city in the distance.
+
+Andrew: Shortly afterwards a big cloud of dust would topple down upon the foreground. This cloud respected<LINE>the level geometry and would gradually flood-fill its way through the map until every crevace was covered.
+
+Andrew: It looked absolutely incredible.
+
+Andrew: Some of the code is still left over in the game. You can get a taste of it by enabling the DustWave room effect through Dev Tools.

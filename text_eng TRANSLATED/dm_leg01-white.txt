@@ -1,0 +1,6 @@
+0-dm_leg01-white
+Will: Originally, Moon's leg was simply going to be standing in Shoreline. However, Artificer's<LINE>drowning mechanics combined with Shoreline became a constant issue. One we eventually<LINE>decided to remove entirely by creating a unique region to replace Shoreline in the past.
+
+Will: This solved several problems at once. Artificer no longer hit a brick wall in shoreline.<LINE>We could have a more grand scavenger population roam Waterfront, and finally we could<LINE>create a unique area that presented a progression in the timeline between slugcats.
+
+Will: All while also giving Moon a proper place to stand that did not feel like she was simply dropped<LINE>onto an existing region! And, still maintaining familiar elements and routes, with some interesting twists.

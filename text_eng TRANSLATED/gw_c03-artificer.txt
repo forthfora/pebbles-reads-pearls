@@ -1,0 +1,8 @@
+0-gw_c03-artificer
+Will: An interesting consequence of game design is seeing the systems you create be twisted by players in ways you didn't imagine.
+
+Will: One example is Artificer's mauling ability. In all the testing I did, I did it as intended. Simply mauling what I grabbed.
+
+Will: However, I began to notice during testing streams that Ender was using it in a way I didn't expect!<LINE>They were stunning scavengers, and then throwing them off ledges, or simply to gain distance from them.
+
+Will: Dynamic mechanics like these are part of what makes the relationship between devs and testers really fun to experience!

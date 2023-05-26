@@ -1,0 +1,8 @@
+0-sl_roof04-white
+Will: This room became rather infamous during development!
+
+Will: The original version was five screens tall, and connected directly to Moon's chamber.
+
+Will: Unfortunately, even with the low gravity provided by finishing Rivulet's campaign, testers would<LINE>repeatedly meet their ends by falling face first into the floor. From the top of the room no less!
+
+Will: We tried numerous ways to compensate for this. Ultimately, we decided to just split this room in two, and<LINE>add more water to stop falls. Requiring us to also go back to Spearmaster's Moon, and update that room too.

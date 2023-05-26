@@ -1,0 +1,10 @@
+0-144
+0 : .  .  . : 30
+
+0 : Is this some kind of joke? : 10
+
+0 : I have seen your kind here many times before. To each I have paid little attention.<LINE>I have given them direction, and my wisdom. : 10
+
+0 : Yet here you stand, another small beast on the floor of my chamber. : 10
+
+0 : I have nothing to offer you that you do not already have, nor am I in a state<LINE>capable of doing so. I cannot help you. I cannot even help myself. : 10

@@ -1,0 +1,26 @@
+0-138
+Poor thing. There are no records of your body's blueprints. Nor is it reasonable to<LINE>assume your extreme adaptations are possible through... natural means.
+
+Your body also appears to hold some form of data storage medium within it.
+
+0 : Brave messenger... What are you? : 60
+
+I could read the data contained in your body, but the process could take<LINE>several cycles. Time I very sadly lack.
+
+I could remove the pearl from you, but the process would be very unpleasant for you. I also do not<LINE>believe the contents within it are directed to me. If you are indeed a messenger, then I urge you to move on.
+
+0 : There is... : -30
+
+SPECEVENT : panic
+
+0 : There is a... a a a : -30
+
+0 : ... : 720
+
+0 : ...There is another like me near here, his name is Five Pebbles. : 60
+
+Please. Hurry to his structure. I am unable to calm him, and his excessive output is causing<LINE>irreversible damage to my own structure. I do not know how long I will continue to even stand.
+
+There is an elevated cable linking our installations. Crossing that bridge is safer than<LINE>attempting to scale Five Pebbles from the ground up.
+
+0 : Hurry little messenger! : 60

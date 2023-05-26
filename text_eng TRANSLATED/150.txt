@@ -1,0 +1,4 @@
+0-150
+0 : Deep within the core of this structure is an energy rail that distributes incredible power. This power<LINE>is drawn from a mass rarefaction cell. Even in my state, a single cell should be enough to help. : 10
+
+0 : Please, remove the cell from its chamber, and bring it far<LINE>to the east. To a friend... if she is somehow still alive. : 10

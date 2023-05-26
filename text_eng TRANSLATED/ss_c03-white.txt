@@ -1,0 +1,6 @@
+0-ss_c03-white
+Will: Inspectors were created to solve an issue testers reported very early in the development of Moon's standing structure.
+
+Will: Without DLLs, it's boring, and lacks threats. While not providing the exact<LINE>same type of hazard as a DLL, Inspectors can hold their own while angered.
+
+Will: Creating a scavenger-like dynamic, where angering them provokes a zero-gravity<LINE>spear fight. Making players at least think twice before they eat neurons.
