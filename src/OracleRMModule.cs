@@ -15,4 +15,6 @@ public class OracleRMModule
 
     public bool wasAlreadyRead = false;
     public int rand = 0;
+
+    public int uniquePearlsBrought = 0;
 }

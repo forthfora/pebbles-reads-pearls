@@ -42,6 +42,7 @@ public static partial class Hooks
     }
 
 
+
     private static readonly ConditionalWeakTable<MoreSlugcats.SSOracleRotBehavior, OracleRMModule> OracleRMData = new();
 
     private static void SSOracleRotBehavior_Update(On.MoreSlugcats.SSOracleRotBehavior.orig_Update orig, MoreSlugcats.SSOracleRotBehavior self, bool eu)
@@ -333,6 +334,14 @@ public static partial class Hooks
         }
         else if (self.id == Conversation.ID.Moon_Pearl_GW)
         {
+            if (oracleModule.wasAlreadyRead)
+            {
+                oracleModule.wasAlreadyRead = false;
+                self.events.Add(new TextEvent(self, 0, self.owner.Translate("This one again? I won't. You've already seen its contents."), 10));
+                self.events.Add(new TextEvent(self, 0, self.owner.Translate("I don't want to think about it, not right now."), 10));
+                return;
+            }
+
             self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(16, PRPRivulet, false, rand);
         }
@@ -462,7 +471,7 @@ public static partial class Hooks
     {
         if (oracleModule.wasAlreadyRead) return;
 
-        switch (oracleModule.readPearls.Count)
+        switch (oracleModule.uniquePearlsBrought)
         {
             case 0:
                 switch (Random.Range(0, 4))
@@ -529,6 +538,8 @@ public static partial class Hooks
                 }
                 break;
         }
+
+        oracleModule.uniquePearlsBrought++;
     }
 
     private static void PebblesPearlIntro(this MoreSlugcats.SSOracleRotBehavior.RMConversation self, OracleRMModule oracleModule)
