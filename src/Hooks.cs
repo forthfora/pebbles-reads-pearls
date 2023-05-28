@@ -1,11 +1,9 @@
-﻿using IL.MoreSlugcats;
-using RWCustom;
+﻿using RWCustom;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using UnityEngine;
-using MoreSlugcats;
 using Random = UnityEngine.Random;
 using TextEvent = Conversation.TextEvent;
 using MoreSlugcatsEnums = MoreSlugcats.MoreSlugcatsEnums;
@@ -87,18 +85,26 @@ public static partial class Hooks
             self.conversation?.Destroy();
             self.conversation = null;
 
-            switch (Random.Range(0, 4))
+            switch (Random.Range(0, 6))
             {
                 case 0:
                     self.dialogBox.Interrupt(self.Translate("Oh? Never mind then..."), 10);
                     break;
 
                 case 1:
-                    self.dialogBox.Interrupt(self.Translate("I suppose I did use to wish your kind would leave me alone."), 10);
+                    self.dialogBox.Interrupt(self.Translate("I suppose I did use to wish your kind would leave me alone. Several times."), 10);
                     break;
 
                 case 2:
                     self.dialogBox.Interrupt(self.Translate("To be honest, listening to others was never my strong suit either."), 10);
+                    break;
+
+                case 3:
+                    self.dialogBox.Interrupt(self.Translate("...as expected."), 10);
+                    break;
+
+                case 4:
+                    self.dialogBox.Interrupt(self.Translate("Would it kill you to sit still for a moment?"), 10);
                     break;
 
                 default:
@@ -232,7 +238,7 @@ public static partial class Hooks
 
         if (oracleModule.wasAlreadyRead)
         {
-            switch (Random.Range(0, 4))
+            switch (Random.Range(0, 5))
             {
                 case 0:
                     self.conversation.events.Insert(0, new TextEvent(self.conversation, 0, self.Translate("I'd prefer not to wear my sensors down more than necessary, but here it is again..."), 10));
@@ -245,6 +251,14 @@ public static partial class Hooks
 
                 case 2:
                     self.conversation.events.Insert(0, new TextEvent(self.conversation, 0, self.Translate("Yes, yes, I can read this one again..."), 10));
+                    break;
+
+                case 3:
+                    self.conversation.events.Insert(0, new TextEvent(self.conversation, 0, self.Translate("Yes, wet mouse; I can read the same thing twice."), 10));
+                    break;
+
+                case 4:
+                    self.conversation.events.Insert(0, new TextEvent(self.conversation, 0, self.Translate("I hope you realize the contents of these do not change on a moment to moment basis?"), 10));
                     break;
 
                 default:
@@ -273,88 +287,96 @@ public static partial class Hooks
 
         if (self.id == Conversation.ID.Moon_Pearl_Misc || self.id == Conversation.ID.Moon_Pearl_Misc2)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(38, PRPRivulet, true, rand);
         }
 
         else if (self.id == Conversation.ID.Moon_Pebbles_Pearl)
         {
-            self.PebblesPearlIntro(oracleModule.wasAlreadyRead);
+            self.PebblesPearlIntro(oracleModule);
             self.LoadEventsFromFile(40, PRPRivulet, true, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_CC)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(7, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_LF_west)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(10, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_LF_bottom)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(11, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_HI)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(12, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_SH)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(13, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_DS)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(14, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_SB_filtration)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(15, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_GW)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(16, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_SL_bridge)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(17, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_SL_moon)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(18, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_SU)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(41, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_UW)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(42, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_SB_ravine)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(43, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_SL_chimney)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(54, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_Red_stomach)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            if (oracleModule.wasAlreadyRead)
+            {
+                oracleModule.wasAlreadyRead = false;
+                self.events.Add(new TextEvent(self, 0, self.owner.Translate("I think you should know more than enough about this one already."), 10));
+                self.events.Add(new TextEvent(self, 0, self.owner.Translate("Let me think about this. Alone."), 10));
+                return;
+            }
+
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(51, PRPRivulet, false, rand);
         }
 
@@ -364,22 +386,22 @@ public static partial class Hooks
 
         else if (self.id == Conversation.ID.Moon_Pearl_SI_west)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(20, PRPRivulet, false, rand);
         }
         else if (self.id == Conversation.ID.Moon_Pearl_SI_top)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(21, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_SI_chat3)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(22, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_SI_chat4)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(23, self.owner.oracle.room.game.GetStorySession.saveState.deathPersistentSaveData.altEnding ? PRPRivuletEnding : PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_SI_chat5)
@@ -388,46 +410,46 @@ public static partial class Hooks
             {
                 oracleModule.wasAlreadyRead = false;
                 self.events.Add(new TextEvent(self, 0, self.owner.Translate("I know I do not deserve this courtesy, but do I deserve to be taunted too?"), 10));
-                self.events.Add(new TextEvent(self, 0, self.owner.Translate("Just take that pearl far away from here. Please"), 10));
+                self.events.Add(new TextEvent(self, 0, self.owner.Translate("Just take that pearl far away from here. Please."), 10));
                 return;
             }
 
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(24, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_SU_filt)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(101, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_DM)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(102, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_LC)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(103, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_OE)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(104, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_MS)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(105, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_Rivulet_stomach)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(119, PRPRivulet, false, rand);
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_LC_second)
         {
-            self.PearlIntro(oracleModule.wasAlreadyRead);
+            self.PearlIntro(oracleModule);
             self.LoadEventsFromFile(121, PRPRivulet, false, rand);
         }
 
@@ -436,35 +458,84 @@ public static partial class Hooks
 
 
 
-    private static void PearlIntro(this MoreSlugcats.SSOracleRotBehavior.RMConversation self, bool wasAlreadyRead)
+    private static void PearlIntro(this MoreSlugcats.SSOracleRotBehavior.RMConversation self, OracleRMModule oracleModule)
     {
-        if (wasAlreadyRead) return;
+        if (oracleModule.wasAlreadyRead) return;
 
-        switch (Random.Range(0, 4))
+        switch (oracleModule.readPearls.Count)
         {
             case 0:
-                self.events.Add(new TextEvent(self, 0, self.owner.Translate("Oh, you want me to read this?"), 10));
+                switch (Random.Range(0, 4))
+                {
+                    case 0:
+                        self.events.Add(new TextEvent(self, 0, self.owner.Translate("Oh, you want me to read this? I suppose I could."), 10));
+                        break;
+
+                    case 1:
+                        self.events.Add(new TextEvent(self, 0, self.owner.Translate("A pearl to read? Listen closely then, if that is even possible for you."), 10));
+                        break;
+
+                    case 2:
+                        self.events.Add(new TextEvent(self, 0, self.owner.Translate("Something for me to read? I hope its contents are worth my time, and your trouble."), 10));
+                        break;
+
+                    default:
+                        self.events.Add(new TextEvent(self, 0, self.owner.Translate("Ah, you have found me something to read? I appreciate the gesture, but I would not recommend you<LINE>come back here again. I am unsure how much time I have left."), 10));
+                        break;
+                }
                 break;
+
 
             case 1:
-                self.events.Add(new TextEvent(self, 0, self.owner.Translate("Hm? Sit still and listen, then."), 10));
+                switch (Random.Range(0, 4))
+                {
+                    case 0:
+                        self.events.Add(new TextEvent(self, 0, self.owner.Translate("Another? Sit still and listen, then."), 10));
+                        break;
+                    
+                    case 1:
+                        self.events.Add(new TextEvent(self, 0, self.owner.Translate("Why risk so much bringing these to me? I appreciate the sentiment, nonetheless."), 10));
+                        break;
+
+                    case 2:
+                        self.events.Add(new TextEvent(self, 0, self.owner.Translate("Something else for me to read? Please be patient while I look at it, as hard as that may be for you."), 10));
+                        break;
+
+                    default:
+                        self.events.Add(new TextEvent(self, 0, self.owner.Translate("Yes, I can read this too. So long as I haven't forgotten how to..."), 10));
+                        break;
+                }
                 break;
 
-            case 2:
-                self.events.Add(new TextEvent(self, 0, self.owner.Translate("Let us see what this one has scratched onto it..."), 10));
-                break;
 
             default:
-                self.events.Add(new TextEvent(self, 0, self.owner.Translate("Yes, I can read this.<LINE>So long as I don't forget how to within the next few seconds..."), 10));
+                switch (Random.Range(0, 4))
+                {
+                    case 0:
+                        self.events.Add(new TextEvent(self, 0, self.owner.Translate("I will admit, you seem to have some talent for finding these. Let's see..."), 10));
+                        break;
+
+                    case 1:
+                        self.events.Add(new TextEvent(self, 0, self.owner.Translate("Ah, yet another one? Where do you find all of these?"), 10));
+                        break;
+
+                    case 2:
+                        self.events.Add(new TextEvent(self, 0, self.owner.Translate("Let us see what you have found this time, wet mouse."), 10));
+                        break;
+
+                    default:
+                        self.events.Add(new TextEvent(self, 0, self.owner.Translate("Something else new? Allow me to see..."), 10));
+                        break;
+                }
                 break;
         }
     }
 
-    private static void PebblesPearlIntro(this MoreSlugcats.SSOracleRotBehavior.RMConversation self, bool wasAlreadyRead)
+    private static void PebblesPearlIntro(this MoreSlugcats.SSOracleRotBehavior.RMConversation self, OracleRMModule oracleModule)
     {
-        if (wasAlreadyRead) return;
+        if (oracleModule.wasAlreadyRead) return;
 
-        switch (Random.Range(0, 4))
+        switch (Random.Range(0, 6))
         {
             case 0:
                 self.events.Add(new TextEvent(self, 0, self.owner.Translate("Just another pearl of many strewn about my chamber."), 10));
@@ -479,6 +550,16 @@ public static partial class Hooks
             case 2:
                 self.events.Add(new TextEvent(self, 0, self.owner.Translate("It's been a long time since I used any one of these..."), 10));
                 self.events.Add(new TextEvent(self, 0, self.owner.Translate("I know as much about its contents as you, little creature.<LINE>Shall we rediscover them together?"), 10));
+                break;
+
+            case 3:
+                self.events.Add(new TextEvent(self, 0, self.owner.Translate("I don't really remember any of these pearls' contents."), 10));
+                self.events.Add(new TextEvent(self, 0, self.owner.Translate("It is nothing important, not anymore. But I will read this one nonetheless."), 10));
+                break;
+
+            case 4:
+                self.events.Add(new TextEvent(self, 0, self.owner.Translate("They are not edible, wet mouse..."), 10));
+                self.events.Add(new TextEvent(self, 0, self.owner.Translate("But I can read them, if that is what you intended."), 10));
                 break;
 
             default:
