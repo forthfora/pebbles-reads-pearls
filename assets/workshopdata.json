@@ -1,0 +1,16 @@
+{
+  "Title": "Pebbles Reads Pearls",
+  "Description": "[h1]Allows Rivulet Pebbles to read pearls, with unique dialogue![/h1]\r\n\r\n[b][u]Drop a pearl in Pebbles\u0027 chamber when he is not talking to have him read it.[/u][/b]\r\n\r\n\r\n[b][u]Source: https://github.com/forthbridge/pebbles-reads-pearls[/u][/b]",
+  "ID": "pebblesreadspearls",
+  "Version": "1.0.0",
+  "TargetGameVersion": "v1.9.07",
+  "Requirements": "moreslugcats",
+  "RequirementNames": "More Slugcats Expansion",
+  "Authors": "forthbridge \u0026 Sidera",
+  "Visibility": "Unlisted",
+  "Tags": [
+    "Game Mechanics"
+  ],
+  "WorkshopID": 2980038894,
+  "UploadFilesOnly": false
+}
