@@ -18,11 +18,23 @@ public static partial class Hooks
 
         On.MoreSlugcats.SSOracleRotBehavior.Update += SSOracleRotBehavior_Update;
         On.MoreSlugcats.SSOracleRotBehavior.RMConversation.AddEvents += RMConversation_AddEvents;
+
+        On.SlugcatStats.HiddenOrUnplayableSlugcat += SlugcatStats_HiddenOrUnplayableSlugcat;
     }
 
+    // vigaro moment
+    private static bool SlugcatStats_HiddenOrUnplayableSlugcat(On.SlugcatStats.orig_HiddenOrUnplayableSlugcat orig, SlugcatStats.Name i)
+    {
+        if (i == PRPRivulet || i == PRPRivuletEnding)
+            return true;
+
+        return orig(i);
+    }
 
     public static SlugcatStats.Name PRPRivulet = null!;
     public static SlugcatStats.Name PRPRivuletEnding = null!;
+
+
 
     private static void RainWorld_OnModsInit(On.RainWorld.orig_OnModsInit orig, RainWorld self)
     {

@@ -15,7 +15,7 @@ public class Plugin : BaseUnityPlugin
 {
     public static new ManualLogSource Logger { get; private set; } = null!;
 
-    public const string VERSION = "1.0.0";  
+    public const string VERSION = "1.0.1";  
     public const string MOD_NAME = "Pebbles Reads Pearls";
     public const string MOD_ID = "pebblesreadspearls";
     public const string AUTHOR = "forthbridge";
