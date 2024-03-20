@@ -1,6 +1,4 @@
 ﻿using RWCustom;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using UnityEngine;
@@ -12,88 +10,65 @@ namespace PebblesReadsPearls;
 
 public static partial class Hooks
 {
-    public static void ApplyHooks()
-    {
-        On.RainWorld.OnModsInit += RainWorld_OnModsInit;
+    private static ConditionalWeakTable<MoreSlugcats.SSOracleRotBehavior, OracleRMModule> OracleRMData { get; } = new();
 
+    public static SlugcatStats.Name PRPRivulet { get; set; } = null!;
+    public static SlugcatStats.Name PRPRivuletEnding { get; set; } = null!;
+
+
+    public static void ApplyFunctionHooks()
+    {
         On.MoreSlugcats.SSOracleRotBehavior.Update += SSOracleRotBehavior_Update;
         On.MoreSlugcats.SSOracleRotBehavior.RMConversation.AddEvents += RMConversation_AddEvents;
 
         On.SlugcatStats.HiddenOrUnplayableSlugcat += SlugcatStats_HiddenOrUnplayableSlugcat;
     }
 
-    // vigaro moment
+
     private static bool SlugcatStats_HiddenOrUnplayableSlugcat(On.SlugcatStats.orig_HiddenOrUnplayableSlugcat orig, SlugcatStats.Name i)
     {
         if (i == PRPRivulet || i == PRPRivuletEnding)
+        {
             return true;
+        }
 
         return orig(i);
     }
-
-    public static SlugcatStats.Name PRPRivulet = null!;
-    public static SlugcatStats.Name PRPRivuletEnding = null!;
-
-
-
-    private static void RainWorld_OnModsInit(On.RainWorld.orig_OnModsInit orig, RainWorld self)
-    {
-        try
-        {
-            PRPRivulet = new(nameof(PRPRivulet), true);
-            PRPRivuletEnding = new(nameof(PRPRivuletEnding), true);
-        }
-        catch (Exception e)
-        {
-            Plugin.Logger.LogError(e);
-        }
-        finally
-        {
-            orig(self);
-        }
-    }
-
-
-
-    private static readonly ConditionalWeakTable<MoreSlugcats.SSOracleRotBehavior, OracleRMModule> OracleRMData = new();
 
     private static void SSOracleRotBehavior_Update(On.MoreSlugcats.SSOracleRotBehavior.orig_Update orig, MoreSlugcats.SSOracleRotBehavior self, bool eu)
     {
         orig(self, eu);
 
-        if (!OracleRMData.TryGetValue(self, out var oracleModule))
-        {
-            oracleModule = new OracleRMModule();
-            OracleRMData.Add(self, oracleModule);
-        }
-
+        var oracleModule = OracleRMData.GetValue(self, _ => new OracleRMModule());
 
         // Clean up
-        if (self.conversation == null || self.FocusedOnHalcyon || oracleModule.floatPearl == null || oracleModule.hoverPos == null)
+        if (self.conversation == null || self.FocusedOnHalcyon || oracleModule.FloatPearl == null || oracleModule.HoverPos == null)
         {
-            if (oracleModule.floatPearl != null)
-                oracleModule.floatPearl.gravity = 1.0f;
+            if (oracleModule.FloatPearl != null)
+            {
+                oracleModule.FloatPearl.gravity = 1.0f;
+            }
 
-            oracleModule.floatPearl = null;
-            oracleModule.hoverPos = null;
+            oracleModule.FloatPearl = null;
+            oracleModule.HoverPos = null;
         }
 
 
         // Read Pearl Hover
-        if (oracleModule.floatPearl != null && oracleModule.hoverPos != null)
+        if (oracleModule.FloatPearl != null && oracleModule.HoverPos != null)
         {
-            oracleModule.floatPearl.firstChunk.vel *= Custom.LerpMap(oracleModule.floatPearl.firstChunk.vel.magnitude, 1f, 6f, 0.999f, 0.9f);
-            oracleModule.floatPearl.firstChunk.vel += Vector2.ClampMagnitude(oracleModule.hoverPos.Value - oracleModule.floatPearl.firstChunk.pos, 100f) / 100f * 0.4f;
-            oracleModule.floatPearl.gravity = 0f;
+            oracleModule.FloatPearl.firstChunk.vel *= Custom.LerpMap(oracleModule.FloatPearl.firstChunk.vel.magnitude, 1f, 6f, 0.999f, 0.9f);
+            oracleModule.FloatPearl.firstChunk.vel += Vector2.ClampMagnitude(oracleModule.HoverPos.Value - oracleModule.FloatPearl.firstChunk.pos, 100f) / 100f * 0.4f;
+            oracleModule.FloatPearl.gravity = 0f;
 
-            self.lookPoint = oracleModule.floatPearl.firstChunk.pos;
+            self.lookPoint = oracleModule.FloatPearl.firstChunk.pos;
         }
 
 
         bool playerInChamber = self.player != null && self.player.room == self.oracle.room && self.player.firstChunk.pos.x > 1100f && self.player.firstChunk.pos.x < 1900f && self.player.firstChunk.pos.y > 750f && self.player.firstChunk.pos.y < 1400f;
 
         // Interrupts by grabbing pearl or leaving chamber
-        if (oracleModule.floatPearl != null && (oracleModule.floatPearl.grabbedBy.Count > 0 || (!playerInChamber && self.hasNoticedPlayer)))
+        if (oracleModule.FloatPearl != null && (oracleModule.FloatPearl.grabbedBy.Count > 0 || (!playerInChamber && self.hasNoticedPlayer)))
         {
             self.conversation?.Destroy();
             self.conversation = null;
@@ -130,12 +105,18 @@ public static partial class Hooks
         SSOracleRot_ReadPearlUpdate(self, oracleModule);
         
 
-        oracleModule.wasGrabbedByPlayer.Clear();
+        oracleModule.WasGrabbedByPlayer.Clear();
         
         if (self.player != null)
+        {
             foreach (Creature.Grasp? grasp in self.player.grasps)
+            {
                 if (grasp != null)
-                    oracleModule.wasGrabbedByPlayer.Add(grasp.grabbed.abstractPhysicalObject);    
+                {
+                    oracleModule.WasGrabbedByPlayer.Add(grasp.grabbed.abstractPhysicalObject);
+                }
+            }
+        }
     }
 
     private static void SSOracleRot_ReadPearlUpdate(MoreSlugcats.SSOracleRotBehavior self, OracleRMModule oracleModule)
@@ -146,66 +127,64 @@ public static partial class Hooks
 
 
         // Pick up pearl, read once in hand
-        if (oracleModule.inspectPearl != null)
+        if (oracleModule.InspectPearl != null)
         {
-            if (oracleModule.inspectPearl.grabbedBy.Count > 0)
+            if (oracleModule.InspectPearl.room == null)
             {
-                for (int i = 0; i < oracleModule.inspectPearl.grabbedBy.Count; i++)
-                {
-                    Creature grabber = oracleModule.inspectPearl.grabbedBy[i].grabber;
-
-                    if (grabber != null)
-                        for (int j = 0; j < grabber.grasps.Length; j++)
-                            if (grabber.grasps[j].grabbed != null && grabber.grasps[j].grabbed == oracleModule.inspectPearl)
-                                grabber.ReleaseGrasp(j);
-                }
+                oracleModule.InspectPearl = null;
             }
-
-            Vector2 targetPos = self.oracle.firstChunk.pos + new Vector2(40f, 20f);
-
-            Vector2 oraclePearlDir = targetPos - oracleModule.inspectPearl.firstChunk.pos;
-            float oraclePearlDist = Custom.Dist(targetPos, oracleModule.inspectPearl.firstChunk.pos);
-
-            oracleModule.inspectPearl.firstChunk.vel += Vector2.ClampMagnitude(oraclePearlDir, 40f) / 40f * Mathf.Clamp(2f - oraclePearlDist / 200f * 2f, 0.5f, 2f);
-
-            if (oracleModule.inspectPearl.firstChunk.vel.magnitude < 1f && oraclePearlDist < 16f)
-                oracleModule.inspectPearl.firstChunk.vel = Custom.RNV() * 8f;
-
-            if (oracleModule.inspectPearl.firstChunk.vel.magnitude > 8f)    
-                oracleModule.inspectPearl.firstChunk.vel /= 2f;
-
-
-
-            if (oraclePearlDist < 100f)
+            else
             {
-                StartItemConversation(self, oracleModule.inspectPearl);
-                
-                oracleModule.floatPearl = oracleModule.inspectPearl;
-                oracleModule.hoverPos = new Vector2?(targetPos);
+                oracleModule.InspectPearl.AllGraspsLetGoOfThisObject(true);
 
-                oracleModule.inspectPearl = null;
+                var targetPos = self.oracle.firstChunk.pos + new Vector2(40f, 20f);
+
+                var oraclePearlDir = targetPos - oracleModule.InspectPearl.firstChunk.pos;
+                var oraclePearlDist = Custom.Dist(targetPos, oracleModule.InspectPearl.firstChunk.pos);
+
+                oracleModule.InspectPearl.firstChunk.vel += Vector2.ClampMagnitude(oraclePearlDir, 40f) / 40f * Mathf.Clamp(2f - oraclePearlDist / 200f * 2f, 0.5f, 2f);
+
+                if (oracleModule.InspectPearl.firstChunk.vel.magnitude < 1f && oraclePearlDist < 16f)
+                {
+                    oracleModule.InspectPearl.firstChunk.vel = Custom.RNV() * 8f;
+                }
+
+                if (oracleModule.InspectPearl.firstChunk.vel.magnitude > 8f)
+                {
+                    oracleModule.InspectPearl.firstChunk.vel /= 2f;
+                }
+
+                if (oraclePearlDist < 100f)
+                {
+                    StartItemConversation(self, oracleModule.InspectPearl);
+                
+                    oracleModule.FloatPearl = oracleModule.InspectPearl;
+                    oracleModule.HoverPos = new Vector2?(targetPos);
+
+                    oracleModule.InspectPearl = null;
+                }
             }
         }
         else // Look for pearl to read
         {
-            List<PhysicalObject>[] roomObjects = self.oracle.room.physicalObjects;
+            var roomObjects = self.oracle.room.physicalObjects;
 
             for (int i = 0; i < roomObjects.Length; i++)
             {
                 for (int j = 0; j < roomObjects[i].Count; j++)
                 {
-                    PhysicalObject physicalObject = roomObjects[i][j];
+                    var physicalObject = roomObjects[i][j];
 
                     if (physicalObject.grabbedBy.Count > 0) continue;
 
-                    if (!oracleModule.wasGrabbedByPlayer.Contains(physicalObject.abstractPhysicalObject)) continue;
+                    if (!oracleModule.WasGrabbedByPlayer.Contains(physicalObject.abstractPhysicalObject)) continue;
 
                     if (physicalObject is not DataPearl dataPearl) continue;
 
                     // Exclude halcyon, it already has dialogue
                     if (dataPearl.AbstractPearl.dataPearlType == MoreSlugcatsEnums.DataPearlType.RM) continue;
 
-                    oracleModule.inspectPearl = dataPearl;
+                    oracleModule.InspectPearl = dataPearl;
                 }
             }
         }
@@ -213,43 +192,43 @@ public static partial class Hooks
 
     private static void StartItemConversation(MoreSlugcats.SSOracleRotBehavior self, DataPearl pearl)
     {
-        if (!OracleRMData.TryGetValue(self, out var oracleModule))
+        var oracleModule = OracleRMData.GetValue(self, _ => new OracleRMModule());
+
+        oracleModule.WasAlreadyRead = oracleModule.ReadPearls.Keys.Contains(pearl.abstractPhysicalObject);
+
+        if (oracleModule.WasAlreadyRead)
         {
-            oracleModule = new OracleRMModule();
-            OracleRMData.Add(self, oracleModule);
-        }
-
-
-        oracleModule.wasAlreadyRead = oracleModule.readPearls.Keys.Contains(pearl.abstractPhysicalObject);
-
-        if (oracleModule.wasAlreadyRead)
-        {
-            oracleModule.rand = oracleModule.readPearls[pearl.AbstractPearl];
+            oracleModule.Rand = oracleModule.ReadPearls[pearl.AbstractPearl];
         }
         else
         {
-            oracleModule.rand = Random.Range(0, 100000);
-            oracleModule.readPearls[pearl.AbstractPearl] = oracleModule.rand;
+            oracleModule.Rand = Random.Range(0, 100000);
+            oracleModule.ReadPearls[pearl.AbstractPearl] = oracleModule.Rand;
         }
 
 
         if (pearl.AbstractPearl.dataPearlType == DataPearl.AbstractDataPearl.DataPearlType.Misc || pearl.AbstractPearl.dataPearlType.Index == -1)
+        {
             self.conversation = new MoreSlugcats.SSOracleRotBehavior.RMConversation(self, Conversation.ID.Moon_Pearl_Misc, self.dialogBox);
-
+        }
         else if (pearl.AbstractPearl.dataPearlType == DataPearl.AbstractDataPearl.DataPearlType.Misc2)
+        {
             self.conversation = new MoreSlugcats.SSOracleRotBehavior.RMConversation(self, Conversation.ID.Moon_Pearl_Misc2, self.dialogBox);
-
+        }
         else if (ModManager.MSC && pearl.AbstractPearl.dataPearlType == MoreSlugcats.MoreSlugcatsEnums.DataPearlType.BroadcastMisc)
+        {
             self.conversation = new MoreSlugcats.SSOracleRotBehavior.RMConversation(self, MoreSlugcats.MoreSlugcatsEnums.ConversationID.Moon_Pearl_BroadcastMisc, self.dialogBox);
-        
+        }
         else if (pearl.AbstractPearl.dataPearlType == DataPearl.AbstractDataPearl.DataPearlType.PebblesPearl)
+        {
             self.conversation = new MoreSlugcats.SSOracleRotBehavior.RMConversation(self, Conversation.ID.Moon_Pebbles_Pearl, self.dialogBox);
-
+        }
         else
+        {
             self.conversation = new MoreSlugcats.SSOracleRotBehavior.RMConversation(self, Conversation.DataPearlToConversation(pearl.AbstractPearl.dataPearlType), self.dialogBox);
+        }
 
-
-        if (oracleModule.wasAlreadyRead)
+        if (oracleModule.WasAlreadyRead)
         {
             switch (Random.Range(0, 5))
             {
@@ -286,14 +265,10 @@ public static partial class Hooks
     {
         orig(self);
 
-        if (!OracleRMData.TryGetValue(self.owner, out var oracleModule))
-        {
-            oracleModule = new OracleRMModule();
-            OracleRMData.Add(self.owner, oracleModule);
-        }
+        var oracleModule = OracleRMData.GetValue(self.owner, _ => new OracleRMModule());
 
         // Allow for consistency in random dialogue (within the same cycle)
-        int rand = oracleModule.rand;
+        int rand = oracleModule.Rand;
 
 
         #region Non DP
@@ -346,9 +321,9 @@ public static partial class Hooks
         }
         else if (self.id == Conversation.ID.Moon_Pearl_GW)
         {
-            if (oracleModule.wasAlreadyRead)
+            if (oracleModule.WasAlreadyRead)
             {
-                oracleModule.wasAlreadyRead = false;
+                oracleModule.WasAlreadyRead = false;
                 self.events.Add(new TextEvent(self, 0, self.owner.Translate("This one again? I won't. You've already seen its contents."), 10));
                 self.events.Add(new TextEvent(self, 0, self.owner.Translate("I don't want to think about it, not right now."), 10));
                 return;
@@ -389,9 +364,9 @@ public static partial class Hooks
         }
         else if (self.id == Conversation.ID.Moon_Pearl_Red_stomach)
         {
-            if (oracleModule.wasAlreadyRead)
+            if (oracleModule.WasAlreadyRead)
             {
-                oracleModule.wasAlreadyRead = false;
+                oracleModule.WasAlreadyRead = false;
                 self.events.Add(new TextEvent(self, 0, self.owner.Translate("I think you should know more than enough about this one already."), 10));
                 self.events.Add(new TextEvent(self, 0, self.owner.Translate("Let me think about this. Alone."), 10));
                 return;
@@ -427,9 +402,9 @@ public static partial class Hooks
         }
         else if (self.id == MoreSlugcatsEnums.ConversationID.Moon_Pearl_SI_chat5)
         {
-            if (oracleModule.wasAlreadyRead)
+            if (oracleModule.WasAlreadyRead)
             {
-                oracleModule.wasAlreadyRead = false;
+                oracleModule.WasAlreadyRead = false;
                 self.events.Add(new TextEvent(self, 0, self.owner.Translate("I know I do not deserve this courtesy, but do I deserve to be taunted too?"), 10));
                 self.events.Add(new TextEvent(self, 0, self.owner.Translate("Just take that pearl far away from here. Please."), 10));
                 return;
@@ -481,9 +456,9 @@ public static partial class Hooks
 
     private static void PearlIntro(this MoreSlugcats.SSOracleRotBehavior.RMConversation self, OracleRMModule oracleModule)
     {
-        if (oracleModule.wasAlreadyRead) return;
+        if (oracleModule.WasAlreadyRead) return;
 
-        switch (oracleModule.uniquePearlsBrought)
+        switch (oracleModule.UniquePearlsBrought)
         {
             case 0:
                 switch (Random.Range(0, 4))
@@ -551,12 +526,12 @@ public static partial class Hooks
                 break;
         }
 
-        oracleModule.uniquePearlsBrought++;
+        oracleModule.UniquePearlsBrought++;
     }
 
     private static void PebblesPearlIntro(this MoreSlugcats.SSOracleRotBehavior.RMConversation self, OracleRMModule oracleModule)
     {
-        if (oracleModule.wasAlreadyRead) return;
+        if (oracleModule.WasAlreadyRead) return;
 
         switch (Random.Range(0, 6))
         {

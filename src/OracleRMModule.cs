@@ -5,16 +5,16 @@ namespace PebblesReadsPearls;
 
 public class OracleRMModule
 {
-    public DataPearl? inspectPearl = null;
+    public DataPearl? InspectPearl { get; set; } = null;
 
-    public DataPearl? floatPearl = null;
-    public Vector2? hoverPos = null;
+    public DataPearl? FloatPearl { get; set; } = null;
+    public Vector2? HoverPos { get; set; } = null;
 
-    public readonly Dictionary<DataPearl.AbstractDataPearl, int> readPearls = new();
-    public readonly List<AbstractPhysicalObject> wasGrabbedByPlayer = new();
+    public Dictionary<DataPearl.AbstractDataPearl, int> ReadPearls { get; } = new();
+    public List<AbstractPhysicalObject> WasGrabbedByPlayer { get; } = new();
 
-    public bool wasAlreadyRead = false;
-    public int rand = 0;
+    public bool WasAlreadyRead { get; set; } = false;
+    public int Rand { get; set; } = 0;
 
-    public int uniquePearlsBrought = 0;
+    public int UniquePearlsBrought { get; set; } = 0;
 }
