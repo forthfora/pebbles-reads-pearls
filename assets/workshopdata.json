@@ -7,10 +7,10 @@
   "Requirements": "moreslugcats",
   "RequirementNames": "More Slugcats Expansion",
   "Authors": "forthbridge \u0026 Sidera",
-  "Visibility": "Unlisted",
+  "Visibility": "Public",
   "Tags": [
     "Game Mechanics"
   ],
   "WorkshopID": 2980038894,
-  "UploadFilesOnly": false
+  "UploadFilesOnly": true
 }
